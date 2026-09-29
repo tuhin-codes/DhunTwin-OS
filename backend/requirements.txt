@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+pandas
+numpy
+scikit-learn
+xgboost
+python-socketio
+python-multipart
+python-dotenv
+pydantic
+pydantic-settings

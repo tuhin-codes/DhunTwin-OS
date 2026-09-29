@@ -1,0 +1,444 @@
+from __future__ import annotations
+
+from typing import Any
+
+import numpy as np
+import pandas as pd
+
+
+class LearnedBaseline:
+    """
+    Learned machine-condition baseline.
+
+    Baselines are learned entirely from the supplied training
+    dataframe. No telemetry values are hard-coded.
+
+    Machine types are matched safely using normalized names.
+
+    Example:
+        Digital Twin: "Compressor"
+        Dataset:      "Air Compressor"
+
+    These are treated as the same semantic machine type.
+
+    A machine type with no corresponding training data remains
+    unavailable rather than borrowing statistics from another
+    machine type.
+    """
+
+    def __init__(
+        self,
+        minimum_samples: int = 30,
+    ):
+        self.minimum_samples = minimum_samples
+        self.baselines: dict[str, dict[str, dict[str, float]]] = {}
+
+    # ==========================================================
+    # MACHINE TYPE NORMALIZATION
+    # ==========================================================
+
+    @staticmethod
+    def _normalize_machine_type(
+        machine_type: str,
+    ) -> str:
+        """
+        Normalize machine-type names without changing their
+        meaning.
+
+        This intentionally handles only semantic naming
+        differences, not arbitrary substitutions.
+        """
+
+        value = str(
+            machine_type
+        ).strip().lower()
+
+        value = (
+            value
+            .replace("_", " ")
+            .replace("-", " ")
+        )
+
+        value = " ".join(
+            value.split()
+        )
+
+        # Safe semantic aliases.
+        aliases = {
+            "air compressor": "compressor",
+        }
+
+        return aliases.get(
+            value,
+            value,
+        )
+
+    # ==========================================================
+    # FIT
+    # ==========================================================
+
+    def fit(
+        self,
+        dataframe: pd.DataFrame,
+        machine_type_column: str,
+        machine_id_column: str,
+        telemetry_columns: list[str],
+    ):
+        """
+        Learn a statistical baseline for every machine type
+        represented in the supplied dataset.
+
+        The machine_id_column is intentionally accepted as part
+        of the interface so that the baseline remains compatible
+        with the rest of CarbonTwin's ML pipeline.
+        """
+
+        if dataframe.empty:
+            raise ValueError(
+                "Cannot fit baseline from an empty dataframe."
+            )
+
+        if machine_type_column not in dataframe.columns:
+            raise ValueError(
+                f"Missing machine type column: "
+                f"{machine_type_column}"
+            )
+
+        missing = [
+            column
+            for column in telemetry_columns
+            if column not in dataframe.columns
+        ]
+
+        if missing:
+            raise ValueError(
+                f"Missing telemetry columns: {missing}"
+            )
+
+        self.baselines = {}
+
+        # ------------------------------------------------------
+        # Learn independently for every machine type.
+        # ------------------------------------------------------
+
+        for machine_type, group in dataframe.groupby(
+            machine_type_column,
+            sort=False,
+        ):
+
+            normalized_type = (
+                self._normalize_machine_type(
+                    machine_type
+                )
+            )
+
+            type_baseline = (
+                self.baselines.setdefault(
+                    normalized_type,
+                    {},
+                )
+            )
+
+            for signal in telemetry_columns:
+
+                values = pd.to_numeric(
+                    group[signal],
+                    errors="coerce",
+                ).dropna()
+
+                if (
+                    len(values)
+                    < self.minimum_samples
+                ):
+                    continue
+
+                std = float(
+                    values.std()
+                )
+
+                # A zero standard deviation is valid.
+                # Deviation() will protect against division
+                # by zero.
+                type_baseline[signal] = {
+                    "median": float(
+                        values.median()
+                    ),
+
+                    "mean": float(
+                        values.mean()
+                    ),
+
+                    "std": std,
+
+                    "q01": float(
+                        values.quantile(0.01)
+                    ),
+
+                    "q05": float(
+                        values.quantile(0.05)
+                    ),
+
+                    "q25": float(
+                        values.quantile(0.25)
+                    ),
+
+                    "q75": float(
+                        values.quantile(0.75)
+                    ),
+
+                    "q95": float(
+                        values.quantile(0.95)
+                    ),
+
+                    "q99": float(
+                        values.quantile(0.99)
+                    ),
+
+                    "samples": int(
+                        len(values)
+                    ),
+
+                    # Preserve the actual dataset label
+                    # for explainability.
+                    "source_machine_type": str(
+                        machine_type
+                    ),
+                }
+
+        return self
+
+    # ==========================================================
+    # LOOKUP
+    # ==========================================================
+
+    def _get_machine_baseline(
+        self,
+        machine_type: str,
+    ) -> dict[str, dict[str, float]] | None:
+
+        normalized_type = (
+            self._normalize_machine_type(
+                machine_type
+            )
+        )
+
+        return self.baselines.get(
+            normalized_type
+        )
+
+    # ==========================================================
+    # DEVIATION
+    # ==========================================================
+
+    def deviation(
+        self,
+        machine_type: str,
+        signal: str,
+        value: float,
+    ) -> dict[str, Any]:
+
+        baseline = (
+            self._get_machine_baseline(
+                machine_type
+            )
+        )
+
+        if baseline is None:
+
+            return {
+                "available": False,
+
+                "deviation": None,
+
+                "position": None,
+
+                "reason": (
+                    "No training baseline exists "
+                    f"for machine type '{machine_type}'."
+                ),
+            }
+
+        stats = baseline.get(
+            signal
+        )
+
+        if stats is None:
+
+            return {
+                "available": False,
+
+                "deviation": None,
+
+                "position": None,
+
+                "reason": (
+                    "No training baseline exists "
+                    f"for signal '{signal}' on "
+                    f"machine type '{machine_type}'."
+                ),
+            }
+
+        median = float(
+            stats["median"]
+        )
+
+        scale = max(
+            abs(float(stats["std"])),
+            1e-9,
+        )
+
+        standardized = (
+            float(value) - median
+        ) / scale
+
+        return {
+            "available": True,
+
+            "deviation": round(
+                abs(standardized),
+                6,
+            ),
+
+            "signed_deviation": round(
+                standardized,
+                6,
+            ),
+
+            "position": (
+                "above"
+                if standardized > 0
+                else "below"
+                if standardized < 0
+                else "near_baseline"
+            ),
+
+            "baseline": {
+                "median": round(
+                    median,
+                    6,
+                ),
+
+                "mean": round(
+                    float(stats["mean"]),
+                    6,
+                ),
+
+                "std": round(
+                    float(stats["std"]),
+                    6,
+                ),
+
+                "samples": int(
+                    stats["samples"]
+                ),
+
+                "source_machine_type": (
+                    stats[
+                        "source_machine_type"
+                    ]
+                ),
+            },
+        }
+
+    # ==========================================================
+    # EXPLAIN OBSERVATION
+    # ==========================================================
+
+    def explain(
+        self,
+        row: pd.Series,
+        machine_type_column: str,
+        telemetry_columns: list[str],
+    ) -> dict[str, Any]:
+
+        if (
+            machine_type_column
+            not in row
+        ):
+            raise ValueError(
+                f"Missing machine type column: "
+                f"{machine_type_column}"
+            )
+
+        machine_type = str(
+            row[machine_type_column]
+        )
+
+        signals = {}
+
+        for signal in telemetry_columns:
+
+            if signal not in row:
+                continue
+
+            value = row[signal]
+
+            if pd.isna(value):
+                continue
+
+            signals[signal] = (
+                self.deviation(
+                    machine_type,
+                    signal,
+                    float(value),
+                )
+            )
+
+        available_signals = [
+            signal
+            for signal, result
+            in signals.items()
+            if result.get(
+                "available",
+                False,
+            )
+        ]
+
+        return {
+            "machine_type": machine_type,
+
+            "normalized_machine_type": (
+                self._normalize_machine_type(
+                    machine_type
+                )
+            ),
+
+            "signals": signals,
+
+            "available": bool(
+                available_signals
+            ),
+
+            "available_signal_count": len(
+                available_signals
+            ),
+
+            "total_signal_count": len(
+                signals
+            ),
+        }
+
+    # ==========================================================
+    # SUMMARY
+    # ==========================================================
+
+    def summary(self) -> dict[str, Any]:
+
+        return {
+            "machine_types": sorted(
+                self.baselines.keys()
+            ),
+
+            "signals_by_type": {
+                machine_type: sorted(
+                    signals.keys()
+                )
+
+                for machine_type, signals
+                in self.baselines.items()
+            },
+
+            "minimum_samples": (
+                self.minimum_samples
+            ),
+        }

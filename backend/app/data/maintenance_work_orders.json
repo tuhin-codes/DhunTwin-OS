@@ -1,0 +1,517 @@
+{
+  "work_orders": [
+    {
+      "work_order_id": "WO-0001",
+      "machine_id": "MTR-001",
+      "machine_type": "Motor",
+      "machine_name": "Production Motor 1",
+      "created_at": "2026-08-28T19:44:43.316520+00:00",
+      "decision_snapshot_at": "2026-08-28 19:44:40.851075+00:00",
+      "decision": "SCHEDULE_MAINTENANCE",
+      "decision_reason": "Maintenance should be scheduled based on the elevated machine condition and predictive risk.",
+      "priority": "HIGH",
+      "priority_score": 52,
+      "type": "PREDICTIVE_MAINTENANCE",
+      "reason": "Maintenance should be scheduled based on the elevated machine condition and predictive risk.",
+      "recommended_state": "MAINTENANCE_SCHEDULED",
+      "workforce": {
+        "engineer_required": false,
+        "technician_required": true,
+        "recommended_role": "TECHNICIAN",
+        "reason": "Maintenance should be scheduled for qualified technician execution."
+      },
+      "recommended_person": {
+        "technician_id": "TECH-001",
+        "technician": "Arjun Mehta",
+        "specialization": "Industrial Motors",
+        "department": "Electrical Maintenance",
+        "availability": "Available",
+        "current_workload": 0,
+        "max_workload": 3,
+        "relevance": "High",
+        "matched_skills": [
+          "drives",
+          "electrical systems",
+          "motor",
+          "vibration analysis"
+        ],
+        "missing_skills": [],
+        "same_department": false,
+        "specialization_match": true,
+        "experience_years": 12,
+        "historical_experience": {
+          "similar_cases": 0,
+          "successful_cases": 0,
+          "repeat_failures": 0,
+          "success_rate": 0.0,
+          "records": []
+        },
+        "evidence": [
+          "Relevant skills: drives, electrical systems, motor, vibration analysis",
+          "Specialization is relevant to this machine type",
+          "12 years of experience",
+          "Current workload: 0/3"
+        ]
+      },
+      "candidate_count": 5,
+      "evidence": {
+        "predictive": {
+          "level": "HIGH",
+          "strongest_probability": 0.609,
+          "probability": {
+            "30m": 0.5604,
+            "60m": 0.5618,
+            "120m": 0.609
+          }
+        },
+        "digital_twin": {
+          "health_score": 75.95,
+          "condition": "MEDIUM"
+        },
+        "degradation": {
+          "condition": "INSUFFICIENT_EVIDENCE",
+          "baseline_available": false,
+          "anomaly_available": false
+        },
+        "rul": {
+          "condition": "MEDIUM",
+          "remaining_useful_life_hours": 133.7,
+          "confidence": 0.7
+        },
+        "anomaly": {
+          "condition": "UNKNOWN"
+        }
+      },
+      "explanation": [
+        "Predictive risk: HIGH",
+        "Digital Twin health condition: MEDIUM",
+        "Degradation evidence: INSUFFICIENT_EVIDENCE",
+        "RUL condition: MEDIUM",
+        "Anomaly evidence: UNKNOWN",
+        "Recommended workforce role: TECHNICIAN",
+        "Maintenance planning is recommended before the machine condition worsens."
+      ],
+      "human_control": {
+        "operator_confirmation_required": false,
+        "automatic_assignment": false,
+        "automatic_shutdown": false,
+        "automatic_machine_command": false
+      },
+      "assignment": {
+        "status": "COMPLETED",
+        "technician_id": "TECH-003",
+        "technician": "Vikram Singh",
+        "role_type": "TECHNICIAN",
+        "required_role": "TECHNICIAN",
+        "assigned_at": "2026-08-28T20:10:35.269162+00:00"
+      },
+      "status": "COMPLETED",
+      "approved_at": "2026-08-28T20:06:00.916631+00:00",
+      "started_at": "2026-08-28T20:11:21.049410+00:00",
+      "completed_at": "2026-08-28T20:12:30.803404+00:00",
+      "completion_note": "Motor inspection and maintenance completed"
+    },
+    {
+      "work_order_id": "WO-0002",
+      "machine_id": "MTR-001",
+      "machine_type": "Motor",
+      "machine_name": "Production Motor 1",
+      "created_at": "2026-08-28T20:20:25.135785+00:00",
+      "decision_snapshot_at": "2026-08-28 20:20:22.930516+00:00",
+      "decision": "SCHEDULE_MAINTENANCE",
+      "decision_reason": "Maintenance should be scheduled based on the elevated machine condition and predictive risk.",
+      "priority": "HIGH",
+      "priority_score": 52,
+      "type": "PREDICTIVE_MAINTENANCE",
+      "reason": "Maintenance should be scheduled based on the elevated machine condition and predictive risk.",
+      "recommended_state": "MAINTENANCE_SCHEDULED",
+      "workforce": {
+        "engineer_required": false,
+        "technician_required": true,
+        "recommended_role": "TECHNICIAN",
+        "reason": "Maintenance should be scheduled for qualified technician execution."
+      },
+      "recommended_person": {
+        "technician_id": "TECH-001",
+        "technician": "Arjun Mehta",
+        "role": "Senior Maintenance Engineer",
+        "role_type": "ENGINEER",
+        "specialization": "Industrial Motors",
+        "department": "Electrical Maintenance",
+        "availability": "Available",
+        "current_workload": 0,
+        "max_workload": 3,
+        "relevance": "High",
+        "matched_skills": [
+          "drives",
+          "electrical systems",
+          "motor",
+          "vibration analysis"
+        ],
+        "missing_skills": [],
+        "same_department": false,
+        "specialization_match": true,
+        "experience_years": 12,
+        "historical_experience": {
+          "similar_cases": 0,
+          "successful_cases": 0,
+          "repeat_failures": 0,
+          "success_rate": 0.0,
+          "records": []
+        },
+        "evidence": [
+          "Relevant skills: drives, electrical systems, motor, vibration analysis",
+          "Specialization is relevant to this machine type",
+          "12 years of experience",
+          "Current workload: 0/3"
+        ]
+      },
+      "candidate_count": 5,
+      "evidence": {
+        "predictive": {
+          "level": "HIGH",
+          "strongest_probability": 0.5904,
+          "probability": {
+            "30m": 0.5604,
+            "60m": 0.5618,
+            "120m": 0.5904
+          }
+        },
+        "digital_twin": {
+          "health_score": 76.01,
+          "condition": "MEDIUM"
+        },
+        "degradation": {
+          "condition": "INSUFFICIENT_EVIDENCE",
+          "baseline_available": false,
+          "anomaly_available": false
+        },
+        "rul": {
+          "condition": "MEDIUM",
+          "remaining_useful_life_hours": 135.0,
+          "confidence": 0.7
+        },
+        "anomaly": {
+          "condition": "UNKNOWN"
+        }
+      },
+      "explanation": [
+        "Predictive risk: HIGH",
+        "Digital Twin health condition: MEDIUM",
+        "Degradation evidence: INSUFFICIENT_EVIDENCE",
+        "RUL condition: MEDIUM",
+        "Anomaly evidence: UNKNOWN",
+        "Recommended workforce role: TECHNICIAN",
+        "Maintenance planning is recommended before the machine condition worsens."
+      ],
+      "human_control": {
+        "operator_confirmation_required": false,
+        "automatic_assignment": false,
+        "automatic_shutdown": false,
+        "automatic_machine_command": false
+      },
+      "assignment": {
+        "status": "COMPLETED",
+        "technician_id": "TECH-003",
+        "technician": "Vikram Singh",
+        "role_type": "TECHNICIAN",
+        "required_role": "TECHNICIAN",
+        "assigned_at": "2026-08-28T20:20:39.366038+00:00"
+      },
+      "status": "COMPLETED",
+      "approved_at": "2026-08-28T20:20:32.735968+00:00",
+      "started_at": "2026-08-28T20:20:44.592152+00:00",
+      "completed_at": "2026-08-28T20:20:50.582006+00:00",
+      "completion_note": "Motor inspection and maintenance completed",
+      "completion_outcome": {
+        "successful": true,
+        "repeat_failure": false,
+        "recorded_at": "2026-08-28T20:20:50.582006+00:00"
+      }
+    },
+    {
+      "work_order_id": "WO-0003",
+      "machine_id": "MTR-001",
+      "machine_type": "Motor",
+      "machine_name": "Production Motor 1",
+      "problem_type": "Elevated vibration",
+      "created_at": "2026-08-28T20:42:42.636184+00:00",
+      "decision_snapshot_at": "2026-08-28 20:42:41.464163+00:00",
+      "decision": "SCHEDULE_MAINTENANCE",
+      "decision_reason": "Maintenance should be scheduled based on the elevated machine condition and predictive risk.",
+      "priority": "HIGH",
+      "priority_score": 52,
+      "type": "PREDICTIVE_MAINTENANCE",
+      "reason": "Maintenance should be scheduled based on the elevated machine condition and predictive risk.",
+      "recommended_state": "MAINTENANCE_SCHEDULED",
+      "workforce": {
+        "engineer_required": false,
+        "technician_required": true,
+        "recommended_role": "TECHNICIAN",
+        "reason": "Maintenance should be scheduled for qualified technician execution."
+      },
+      "recommended_person": {
+        "technician_id": "TECH-003",
+        "technician": "Vikram Singh",
+        "role": "Senior Electrical Technician",
+        "role_type": "TECHNICIAN",
+        "specialization": "Industrial Motors",
+        "department": "Electrical Maintenance",
+        "availability": "Available",
+        "current_workload": 0,
+        "max_workload": 3,
+        "relevance": "Very High",
+        "matched_skills": [
+          "drives",
+          "electrical systems",
+          "motor",
+          "vibration analysis"
+        ],
+        "missing_skills": [],
+        "same_department": false,
+        "specialization_match": true,
+        "experience_years": 11,
+        "historical_experience": {
+          "similar_cases": 1,
+          "successful_cases": 1,
+          "repeat_failures": 0,
+          "success_rate": 100.0,
+          "records": [
+            {
+              "id": "HIST-006",
+              "machine_id": "MTR-001",
+              "machine_type": "Motor",
+              "problem_type": "High Vibration",
+              "technician_id": "TECH-003",
+              "maintenance_type": "Vibration Analysis",
+              "repair_duration_hours": 5.0,
+              "successful": true,
+              "repeat_failure": false
+            }
+          ]
+        },
+        "evidence": [
+          "Relevant skills: drives, electrical systems, motor, vibration analysis",
+          "Specialization is relevant to this machine type",
+          "11 years of experience",
+          "Handled 1 relevant historical case(s)",
+          "1 relevant case(s) were successful",
+          "Current workload: 0/3"
+        ]
+      },
+      "candidate_count": 5,
+      "evidence": {
+        "predictive": {
+          "level": "HIGH",
+          "strongest_probability": 0.6429,
+          "probability": {
+            "30m": 0.5652,
+            "60m": 0.6429,
+            "120m": 0.6429
+          }
+        },
+        "digital_twin": {
+          "health_score": 76.01,
+          "condition": "MEDIUM"
+        },
+        "degradation": {
+          "condition": "INSUFFICIENT_EVIDENCE",
+          "baseline_available": false,
+          "anomaly_available": false
+        },
+        "rul": {
+          "condition": "MEDIUM",
+          "remaining_useful_life_hours": 123.4,
+          "confidence": 0.7
+        },
+        "anomaly": {
+          "condition": "UNKNOWN"
+        }
+      },
+      "explanation": [
+        "Predictive risk: HIGH",
+        "Digital Twin health condition: MEDIUM",
+        "Degradation evidence: INSUFFICIENT_EVIDENCE",
+        "RUL condition: MEDIUM",
+        "Anomaly evidence: UNKNOWN",
+        "Recommended workforce role: TECHNICIAN",
+        "Maintenance planning is recommended before the machine condition worsens."
+      ],
+      "human_control": {
+        "operator_confirmation_required": false,
+        "automatic_assignment": false,
+        "automatic_shutdown": false,
+        "automatic_machine_command": false
+      },
+      "assignment": {
+        "status": "COMPLETED",
+        "technician_id": "TECH-003",
+        "technician": "Vikram Singh",
+        "role_type": "TECHNICIAN",
+        "required_role": "TECHNICIAN",
+        "assigned_at": "2026-08-28T20:42:57.395127+00:00"
+      },
+      "status": "COMPLETED",
+      "approved_at": "2026-08-28T20:42:51.039992+00:00",
+      "started_at": "2026-08-28T20:43:02.260436+00:00",
+      "completed_at": "2026-08-28T20:43:07.666022+00:00",
+      "completion_note": "Motor maintenance completed",
+      "completion_outcome": {
+        "successful": true,
+        "repeat_failure": false,
+        "recorded_at": "2026-08-28T20:43:07.666022+00:00"
+      }
+    },
+    {
+      "work_order_id": "WO-0004",
+      "machine_id": "MTR-001",
+      "machine_type": "Motor",
+      "machine_name": "Production Motor 1",
+      "problem_type": "Elevated vibration",
+      "created_at": "2026-08-30T18:43:55.469214+00:00",
+      "decision_snapshot_at": "2026-08-30 18:43:54.735366+00:00",
+      "decision": "SCHEDULE_MAINTENANCE",
+      "decision_reason": "Maintenance should be scheduled based on the elevated machine condition and predictive risk.",
+      "priority": "HIGH",
+      "priority_score": 52,
+      "type": "PREDICTIVE_MAINTENANCE",
+      "reason": "Maintenance should be scheduled based on the elevated machine condition and predictive risk.",
+      "recommended_state": "MAINTENANCE_SCHEDULED",
+      "workforce": {
+        "engineer_required": false,
+        "technician_required": true,
+        "recommended_role": "TECHNICIAN",
+        "reason": "Maintenance should be scheduled for qualified technician execution."
+      },
+      "recommended_person": {
+        "technician_id": "TECH-003",
+        "technician": "Vikram Singh",
+        "role": "Senior Electrical Technician",
+        "role_type": "TECHNICIAN",
+        "specialization": "Industrial Motors",
+        "department": "Electrical Maintenance",
+        "availability": "Available",
+        "current_workload": 0,
+        "max_workload": 3,
+        "relevance": "Very High",
+        "matched_skills": [
+          "drives",
+          "electrical systems",
+          "motor",
+          "vibration analysis"
+        ],
+        "missing_skills": [],
+        "same_department": false,
+        "specialization_match": true,
+        "experience_years": 11,
+        "historical_experience": {
+          "similar_cases": 2,
+          "successful_cases": 2,
+          "repeat_failures": 0,
+          "success_rate": 100.0,
+          "records": [
+            {
+              "id": "HIST-006",
+              "machine_id": "MTR-001",
+              "machine_type": "Motor",
+              "problem_type": "High Vibration",
+              "technician_id": "TECH-003",
+              "maintenance_type": "Vibration Analysis",
+              "repair_duration_hours": 5.0,
+              "successful": true,
+              "repeat_failure": false
+            },
+            {
+              "work_order_id": "WO-0003",
+              "machine_id": "MTR-001",
+              "machine_type": "Motor",
+              "problem_type": "Elevated vibration",
+              "technician_id": "TECH-003",
+              "technician": "Vikram Singh",
+              "role_type": "TECHNICIAN",
+              "decision": "SCHEDULE_MAINTENANCE",
+              "priority": "HIGH",
+              "priority_score": 52,
+              "maintenance_type": "PREDICTIVE_MAINTENANCE",
+              "successful": true,
+              "repeat_failure": false,
+              "completion_note": "Motor maintenance completed",
+              "completed_at": "2026-08-28T20:43:07.666022+00:00",
+              "recorded_at": "2026-08-28T20:43:07.669024+00:00"
+            }
+          ]
+        },
+        "evidence": [
+          "Relevant skills: drives, electrical systems, motor, vibration analysis",
+          "Specialization is relevant to this machine type",
+          "11 years of experience",
+          "Handled 2 relevant historical case(s)",
+          "2 relevant case(s) were successful",
+          "Current workload: 0/3"
+        ]
+      },
+      "candidate_count": 5,
+      "evidence": {
+        "predictive": {
+          "level": "HIGH",
+          "strongest_probability": 0.5862,
+          "probability": {
+            "30m": 0.5862,
+            "60m": 0.5862,
+            "120m": 0.5862
+          }
+        },
+        "digital_twin": {
+          "health_score": 76.1,
+          "condition": "MEDIUM"
+        },
+        "degradation": {
+          "condition": "INSUFFICIENT_EVIDENCE",
+          "baseline_available": false,
+          "anomaly_available": false
+        },
+        "rul": {
+          "condition": "MEDIUM",
+          "remaining_useful_life_hours": 129.1,
+          "confidence": 0.7
+        },
+        "anomaly": {
+          "condition": "UNKNOWN"
+        }
+      },
+      "explanation": [
+        "Predictive risk: HIGH",
+        "Digital Twin health condition: MEDIUM",
+        "Degradation evidence: INSUFFICIENT_EVIDENCE",
+        "RUL condition: MEDIUM",
+        "Anomaly evidence: UNKNOWN",
+        "Recommended workforce role: TECHNICIAN",
+        "Maintenance planning is recommended before the machine condition worsens."
+      ],
+      "human_control": {
+        "operator_confirmation_required": false,
+        "automatic_assignment": false,
+        "automatic_shutdown": false,
+        "automatic_machine_command": false
+      },
+      "assignment": {
+        "status": "COMPLETED",
+        "technician_id": "TECH-003",
+        "technician": "Vikram Singh",
+        "role_type": "TECHNICIAN",
+        "required_role": "TECHNICIAN",
+        "assigned_at": "2026-08-30T18:44:26.030199+00:00"
+      },
+      "status": "COMPLETED",
+      "approved_at": "2026-08-30T18:44:19.236997+00:00",
+      "started_at": "2026-08-30T18:44:35.521526+00:00",
+      "completed_at": "2026-08-30T18:44:41.701278+00:00",
+      "completion_note": "Final predictive maintenance validation completed",
+      "completion_outcome": {
+        "successful": true,
+        "repeat_failure": false,
+        "recorded_at": "2026-08-30T18:44:41.701278+00:00"
+      }
+    }
+  ]
+}

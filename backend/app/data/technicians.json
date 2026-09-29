@@ -1,0 +1,3317 @@
+{
+  "technicians": [
+    {
+      "id": "TECH-001",
+      "name": "Arjun Mehta",
+      "role": "Senior Maintenance Engineer",
+      "specialization": "Industrial Motors",
+      "skills": [
+        "Motor",
+        "Electrical Systems",
+        "Drives",
+        "Vibration Analysis",
+        "Condition Monitoring",
+        "Predictive Maintenance"
+      ],
+      "certifications": [
+        "Motor Maintenance",
+        "Electrical Safety",
+        "Vibration Analysis"
+      ],
+      "department": "Electrical Maintenance",
+      "experience_years": 12,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift A",
+        "start": "06:00",
+        "end": "14:00"
+      },
+      "plant_area": "Production Line 1",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-002",
+      "name": "Rohan Verma",
+      "role": "Electrical Engineer",
+      "specialization": "Industrial Electrical Systems",
+      "skills": [
+        "Motor",
+        "Electrical Systems",
+        "Drives",
+        "Electrical Diagnostics",
+        "Sensors",
+        "Preventive Maintenance"
+      ],
+      "certifications": [
+        "Electrical Safety",
+        "Motor Maintenance",
+        "Industrial Drives"
+      ],
+      "department": "Electrical Maintenance",
+      "experience_years": 9,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift B",
+        "start": "14:00",
+        "end": "22:00"
+      },
+      "plant_area": "Production Line 1",
+      "current_workload": 1,
+      "max_workload": 3,
+      "assigned_machine": "MTR-002",
+      "current_ticket": "MT-MTR-002-1",
+      "assignments": [
+        {
+          "machine_id": "MTR-002",
+          "ticket_id": "MT-MTR-002-1"
+        }
+      ]
+    },
+    {
+      "id": "TECH-003",
+      "name": "Vikram Singh",
+      "role": "Senior Electrical Technician",
+      "specialization": "Industrial Motors",
+      "skills": [
+        "Motor",
+        "Electrical Systems",
+        "Drives",
+        "Vibration Analysis",
+        "Bearings",
+        "Preventive Maintenance"
+      ],
+      "certifications": [
+        "Motor Maintenance",
+        "Electrical Safety",
+        "Vibration Analysis"
+      ],
+      "department": "Electrical Maintenance",
+      "experience_years": 11,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift C",
+        "start": "22:00",
+        "end": "06:00"
+      },
+      "plant_area": "Production Line 1",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-004",
+      "name": "Neeraj Kumar",
+      "role": "Maintenance Technician",
+      "specialization": "Industrial Automation",
+      "skills": [
+        "Automation",
+        "Robotics",
+        "Sensors",
+        "PLC",
+        "Preventive Maintenance"
+      ],
+      "certifications": [
+        "PLC Programming",
+        "Industrial Automation",
+        "Electrical Safety"
+      ],
+      "department": "Automation & Robotics",
+      "experience_years": 7,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift A",
+        "start": "06:00",
+        "end": "14:00"
+      },
+      "plant_area": "Assembly Line",
+      "current_workload": 1,
+      "max_workload": 3,
+      "assigned_machine": "ROB-001",
+      "current_ticket": "MT-ROB-001-1",
+      "assignments": [
+        {
+          "machine_id": "ROB-001",
+          "ticket_id": "MT-ROB-001-1"
+        }
+      ]
+    },
+    {
+      "id": "TECH-005",
+      "name": "Suresh Patel",
+      "role": "Senior Utilities Technician",
+      "specialization": "Compressed Air Systems",
+      "skills": [
+        "Compressor",
+        "Pneumatics",
+        "Pressure Systems",
+        "Mechanical Maintenance",
+        "Preventive Maintenance"
+      ],
+      "certifications": [
+        "Compressed Air Systems",
+        "Pressure Systems",
+        "Mechanical Safety"
+      ],
+      "department": "Utilities",
+      "experience_years": 10,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift A",
+        "start": "06:00",
+        "end": "14:00"
+      },
+      "plant_area": "Utility Block",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-006",
+      "name": "Rahul Sharma",
+      "role": "Senior Mechanical Technician",
+      "specialization": "General Mechanical",
+      "skills": [
+        "Mechanical",
+        "Bearings",
+        "Lubrication",
+        "Vibration Analysis",
+        "Preventive Maintenance",
+        "Pressure Systems",
+        "Mechanical Maintenance"
+      ],
+      "certifications": [
+        "Mechanical Maintenance",
+        "Vibration Analysis",
+        "Lockout Tagout"
+      ],
+      "department": "Mechanical Maintenance",
+      "experience_years": 13,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift B",
+        "start": "14:00",
+        "end": "22:00"
+      },
+      "plant_area": "Production Line 2",
+      "current_workload": 0,
+      "max_workload": 4,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-007",
+      "name": "Amit Joshi",
+      "role": "Mechanical Engineer",
+      "specialization": "Rotating Equipment",
+      "skills": [
+        "Mechanical",
+        "Bearings",
+        "Pumps",
+        "Vibration Analysis",
+        "Alignment",
+        "Predictive Maintenance"
+      ],
+      "certifications": [
+        "Rotating Equipment",
+        "Vibration Analysis",
+        "Mechanical Safety"
+      ],
+      "department": "Mechanical Maintenance",
+      "experience_years": 14,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift A",
+        "start": "06:00",
+        "end": "14:00"
+      },
+      "plant_area": "Production Line 2",
+      "current_workload": 0,
+      "max_workload": 4,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-008",
+      "name": "Karan Malhotra",
+      "role": "Mechanical Technician",
+      "specialization": "Pump Systems",
+      "skills": [
+        "Pump",
+        "Hydraulics",
+        "Fluid Systems",
+        "Mechanical Maintenance",
+        "Bearings"
+      ],
+      "certifications": [
+        "Pump Maintenance",
+        "Hydraulics",
+        "Mechanical Safety"
+      ],
+      "department": "Mechanical Maintenance",
+      "experience_years": 8,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift B",
+        "start": "14:00",
+        "end": "22:00"
+      },
+      "plant_area": "Production Line 2",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-009",
+      "name": "Manish Rao",
+      "role": "Reliability Engineer",
+      "specialization": "Predictive Maintenance",
+      "skills": [
+        "Vibration Analysis",
+        "Condition Monitoring",
+        "Root Cause Analysis",
+        "Predictive Maintenance",
+        "Failure Analysis",
+        "Mechanical"
+      ],
+      "certifications": [
+        "Vibration Analysis",
+        "Reliability Engineering",
+        "Predictive Maintenance"
+      ],
+      "department": "Reliability Engineering",
+      "experience_years": 15,
+      "availability": "Available",
+      "shift": {
+        "name": "General",
+        "start": "08:00",
+        "end": "17:00"
+      },
+      "plant_area": "Central Maintenance",
+      "current_workload": 1,
+      "max_workload": 3,
+      "assigned_machine": "MTR-003",
+      "current_ticket": "MT-MTR-003-1",
+      "assignments": [
+        {
+          "machine_id": "MTR-003",
+          "ticket_id": "MT-MTR-003-1"
+        }
+      ]
+    },
+    {
+      "id": "TECH-010",
+      "name": "Deepak Nair",
+      "role": "Reliability Technician",
+      "specialization": "Condition Monitoring",
+      "skills": [
+        "Vibration Analysis",
+        "Thermal Imaging",
+        "Condition Monitoring",
+        "Predictive Maintenance",
+        "Sensors"
+      ],
+      "certifications": [
+        "Condition Monitoring",
+        "Thermal Imaging",
+        "Vibration Analysis"
+      ],
+      "department": "Reliability Engineering",
+      "experience_years": 9,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift A",
+        "start": "06:00",
+        "end": "14:00"
+      },
+      "plant_area": "Central Maintenance",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-011",
+      "name": "Sanjay Gupta",
+      "role": "Boiler Engineer",
+      "specialization": "Boiler Systems",
+      "skills": [
+        "Boiler",
+        "Thermal Systems",
+        "Pressure Systems",
+        "Steam Systems",
+        "Preventive Maintenance"
+      ],
+      "certifications": [
+        "Boiler Operations",
+        "Pressure Systems",
+        "Thermal Systems"
+      ],
+      "department": "Utilities",
+      "experience_years": 16,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift A",
+        "start": "06:00",
+        "end": "14:00"
+      },
+      "plant_area": "Boiler House",
+      "current_workload": 2,
+      "max_workload": 3,
+      "assigned_machine": "BLR-001",
+      "current_ticket": "MT-BLR-001-2",
+      "assignments": [
+        {
+          "machine_id": "BLR-001",
+          "ticket_id": "MT-BLR-001-2"
+        },
+        {
+          "machine_id": "BLR-002",
+          "ticket_id": "MT-BLR-002-1"
+        }
+      ]
+    },
+    {
+      "id": "TECH-012",
+      "name": "Rakesh Yadav",
+      "role": "Boiler Technician",
+      "specialization": "Industrial Boilers",
+      "skills": [
+        "Boiler",
+        "Thermal Systems",
+        "Pressure Systems",
+        "Steam Systems",
+        "Mechanical Maintenance"
+      ],
+      "certifications": [
+        "Boiler Maintenance",
+        "Pressure Systems"
+      ],
+      "department": "Utilities",
+      "experience_years": 11,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift B",
+        "start": "14:00",
+        "end": "22:00"
+      },
+      "plant_area": "Boiler House",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-013",
+      "name": "Prakash Menon",
+      "role": "Utilities Engineer",
+      "specialization": "Steam & Thermal Systems",
+      "skills": [
+        "Boiler",
+        "Steam Systems",
+        "Thermal Systems",
+        "Pressure Systems",
+        "Energy Management"
+      ],
+      "certifications": [
+        "Boiler Operations",
+        "Energy Management",
+        "Pressure Systems"
+      ],
+      "department": "Utilities",
+      "experience_years": 13,
+      "availability": "On Call",
+      "shift": {
+        "name": "General",
+        "start": "08:00",
+        "end": "17:00"
+      },
+      "plant_area": "Boiler House",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-014",
+      "name": "Nitin Shah",
+      "role": "Utilities Technician",
+      "specialization": "Water Treatment",
+      "skills": [
+        "Water Treatment",
+        "Pumps",
+        "Valves",
+        "Pressure Systems",
+        "Preventive Maintenance"
+      ],
+      "certifications": [
+        "Water Treatment",
+        "Pump Maintenance"
+      ],
+      "department": "Utilities",
+      "experience_years": 7,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift C",
+        "start": "22:00",
+        "end": "06:00"
+      },
+      "plant_area": "Utility Block",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-015",
+      "name": "Harish Iyer",
+      "role": "Pump Engineer",
+      "specialization": "Pump & Fluid Systems",
+      "skills": [
+        "Pump",
+        "Hydraulics",
+        "Fluid Systems",
+        "Mechanical Maintenance",
+        "Alignment"
+      ],
+      "certifications": [
+        "Pump Maintenance",
+        "Hydraulics",
+        "Rotating Equipment"
+      ],
+      "department": "Utilities",
+      "experience_years": 12,
+      "availability": "Available",
+      "shift": {
+        "name": "General",
+        "start": "08:00",
+        "end": "17:00"
+      },
+      "plant_area": "Utility Block",
+      "current_workload": 2,
+      "max_workload": 3,
+      "assigned_machine": "PMP-001",
+      "current_ticket": "MT-PMP-001-1",
+      "assignments": [
+        {
+          "machine_id": "PMP-001",
+          "ticket_id": "MT-PMP-001-1"
+        },
+        {
+          "machine_id": "PMP-002",
+          "ticket_id": "MT-103"
+        }
+      ]
+    },
+    {
+      "id": "TECH-016",
+      "name": "Vivek Desai",
+      "role": "Pump Technician",
+      "specialization": "Pump & Fluid Systems",
+      "skills": [
+        "Pump",
+        "Hydraulics",
+        "Fluid Systems",
+        "Bearings",
+        "Mechanical Maintenance"
+      ],
+      "certifications": [
+        "Pump Maintenance",
+        "Hydraulics"
+      ],
+      "department": "Utilities",
+      "experience_years": 8,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift C",
+        "start": "22:00",
+        "end": "06:00"
+      },
+      "plant_area": "Utility Block",
+      "current_workload": 1,
+      "max_workload": 3,
+      "assigned_machine": "PMP-003",
+      "current_ticket": "MT-PMP-003-1",
+      "assignments": [
+        {
+          "machine_id": "PMP-003",
+          "ticket_id": "MT-PMP-003-1"
+        }
+      ]
+    },
+    {
+      "id": "TECH-017",
+      "name": "Mohit Bansal",
+      "role": "Compressor Engineer",
+      "specialization": "Compressed Air Systems",
+      "skills": [
+        "Compressor",
+        "Pneumatics",
+        "Pressure Systems",
+        "Mechanical Maintenance",
+        "Condition Monitoring"
+      ],
+      "certifications": [
+        "Compressed Air Systems",
+        "Pressure Systems",
+        "Mechanical Safety"
+      ],
+      "department": "Utilities",
+      "experience_years": 14,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift B",
+        "start": "14:00",
+        "end": "22:00"
+      },
+      "plant_area": "Utility Block",
+      "current_workload": 1,
+      "max_workload": 3,
+      "assigned_machine": "CMP-001",
+      "current_ticket": "MT-CMP-001-1",
+      "assignments": [
+        {
+          "machine_id": "CMP-001",
+          "ticket_id": "MT-CMP-001-1"
+        }
+      ]
+    },
+    {
+      "id": "TECH-018",
+      "name": "Ashok Kumar",
+      "role": "Utilities Technician",
+      "specialization": "Compressed Air Systems",
+      "skills": [
+        "Compressor",
+        "Pneumatics",
+        "Pressure Systems",
+        "Valves",
+        "Preventive Maintenance"
+      ],
+      "certifications": [
+        "Compressed Air Systems",
+        "Pneumatics"
+      ],
+      "department": "Utilities",
+      "experience_years": 6,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift A",
+        "start": "06:00",
+        "end": "14:00"
+      },
+      "plant_area": "Utility Block",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-019",
+      "name": "Anil Kapoor",
+      "role": "Electrical Maintenance Engineer",
+      "specialization": "Industrial Electrical Systems",
+      "skills": [
+        "Electrical Systems",
+        "Motor",
+        "Switchgear",
+        "Drives",
+        "Electrical Diagnostics"
+      ],
+      "certifications": [
+        "Electrical Safety",
+        "Industrial Drives",
+        "High Voltage Safety"
+      ],
+      "department": "Electrical Maintenance",
+      "experience_years": 16,
+      "availability": "Available",
+      "shift": {
+        "name": "General",
+        "start": "08:00",
+        "end": "17:00"
+      },
+      "plant_area": "Electrical Room",
+      "current_workload": 2,
+      "max_workload": 3,
+      "assigned_machine": "MTR-004",
+      "current_ticket": "MT-MTR-004-1",
+      "assignments": [
+        {
+          "machine_id": "MTR-004",
+          "ticket_id": "MT-MTR-004-1"
+        },
+        {
+          "machine_id": "MTR-001",
+          "ticket_id": "MT-102"
+        }
+      ]
+    },
+    {
+      "id": "TECH-020",
+      "name": "Tarun Sethi",
+      "role": "Electrical Technician",
+      "specialization": "Motor Control Systems",
+      "skills": [
+        "Motor",
+        "Electrical Systems",
+        "Drives",
+        "Control Panels",
+        "Sensors"
+      ],
+      "certifications": [
+        "Electrical Safety",
+        "Motor Maintenance"
+      ],
+      "department": "Electrical Maintenance",
+      "experience_years": 6,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift B",
+        "start": "14:00",
+        "end": "22:00"
+      },
+      "plant_area": "Production Line 1",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-021",
+      "name": "Sameer Khan",
+      "role": "Electrical Technician",
+      "specialization": "Industrial Drives",
+      "skills": [
+        "Drives",
+        "Electrical Systems",
+        "Motor",
+        "PLC",
+        "Sensors"
+      ],
+      "certifications": [
+        "Industrial Drives",
+        "Electrical Safety",
+        "PLC Programming"
+      ],
+      "department": "Electrical Maintenance",
+      "experience_years": 8,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift C",
+        "start": "22:00",
+        "end": "06:00"
+      },
+      "plant_area": "Production Line 1",
+      "current_workload": 1,
+      "max_workload": 3,
+      "assigned_machine": "MTR-005",
+      "current_ticket": "MT-MTR-005-1",
+      "assignments": [
+        {
+          "machine_id": "MTR-005",
+          "ticket_id": "MT-MTR-005-1"
+        }
+      ]
+    },
+    {
+      "id": "TECH-022",
+      "name": "Rajiv Thomas",
+      "role": "Electrical Engineer",
+      "specialization": "Power Distribution",
+      "skills": [
+        "Electrical Systems",
+        "Switchgear",
+        "Power Distribution",
+        "Protection Systems",
+        "Electrical Diagnostics"
+      ],
+      "certifications": [
+        "High Voltage Safety",
+        "Electrical Safety"
+      ],
+      "department": "Electrical Maintenance",
+      "experience_years": 18,
+      "availability": "On Call",
+      "shift": {
+        "name": "General",
+        "start": "08:00",
+        "end": "17:00"
+      },
+      "plant_area": "Electrical Room",
+      "current_workload": 0,
+      "max_workload": 2,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-023",
+      "name": "Pankaj Arora",
+      "role": "Electrical Technician",
+      "specialization": "Control Panels",
+      "skills": [
+        "Electrical Systems",
+        "Control Panels",
+        "Sensors",
+        "Motor",
+        "Preventive Maintenance"
+      ],
+      "certifications": [
+        "Electrical Safety",
+        "Control Panel Maintenance"
+      ],
+      "department": "Electrical Maintenance",
+      "experience_years": 7,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift A",
+        "start": "06:00",
+        "end": "14:00"
+      },
+      "plant_area": "Assembly Line",
+      "current_workload": 1,
+      "max_workload": 3,
+      "assigned_machine": "MTR-006",
+      "current_ticket": "MT-MTR-006-1",
+      "assignments": [
+        {
+          "machine_id": "MTR-006",
+          "ticket_id": "MT-MTR-006-1"
+        }
+      ]
+    },
+    {
+      "id": "TECH-024",
+      "name": "Imran Sheikh",
+      "role": "Electrical Technician",
+      "specialization": "Industrial Motors",
+      "skills": [
+        "Motor",
+        "Electrical Systems",
+        "Drives",
+        "Bearings",
+        "Preventive Maintenance"
+      ],
+      "certifications": [
+        "Motor Maintenance",
+        "Electrical Safety"
+      ],
+      "department": "Electrical Maintenance",
+      "experience_years": 9,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift B",
+        "start": "14:00",
+        "end": "22:00"
+      },
+      "plant_area": "Production Line 1",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-025",
+      "name": "Naveen Reddy",
+      "role": "Electrical Engineer",
+      "specialization": "Motor Drives",
+      "skills": [
+        "Motor",
+        "Electrical Systems",
+        "Drives",
+        "Condition Monitoring",
+        "PLC"
+      ],
+      "certifications": [
+        "Industrial Drives",
+        "Electrical Safety",
+        "Motor Maintenance"
+      ],
+      "department": "Electrical Maintenance",
+      "experience_years": 10,
+      "availability": "Available",
+      "shift": {
+        "name": "General",
+        "start": "08:00",
+        "end": "17:00"
+      },
+      "plant_area": "Production Line 1",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-026",
+      "name": "Yash Agarwal",
+      "role": "Electrical Technician",
+      "specialization": "Industrial Electrical Systems",
+      "skills": [
+        "Electrical Systems",
+        "Motor",
+        "Sensors",
+        "Preventive Maintenance",
+        "Control Panels"
+      ],
+      "certifications": [
+        "Electrical Safety"
+      ],
+      "department": "Electrical Maintenance",
+      "experience_years": 5,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift C",
+        "start": "22:00",
+        "end": "06:00"
+      },
+      "plant_area": "Production Line 2",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-027",
+      "name": "Abhishek Jain",
+      "role": "Senior Electrical Engineer",
+      "specialization": "Industrial Drives",
+      "skills": [
+        "Motor",
+        "Electrical Systems",
+        "Drives",
+        "Electrical Diagnostics",
+        "Vibration Analysis",
+        "Predictive Maintenance"
+      ],
+      "certifications": [
+        "Industrial Drives",
+        "Electrical Safety",
+        "Vibration Analysis"
+      ],
+      "department": "Electrical Maintenance",
+      "experience_years": 17,
+      "availability": "On Leave",
+      "shift": {
+        "name": "General",
+        "start": "08:00",
+        "end": "17:00"
+      },
+      "plant_area": "Production Line 1",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-028",
+      "name": "Vishal Pandey",
+      "role": "Electrical Technician",
+      "specialization": "Motor Maintenance",
+      "skills": [
+        "Motor",
+        "Electrical Systems",
+        "Bearings",
+        "Lubrication",
+        "Preventive Maintenance"
+      ],
+      "certifications": [
+        "Motor Maintenance",
+        "Electrical Safety"
+      ],
+      "department": "Electrical Maintenance",
+      "experience_years": 8,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift A",
+        "start": "06:00",
+        "end": "14:00"
+      },
+      "plant_area": "Production Line 2",
+      "current_workload": 1,
+      "max_workload": 3,
+      "assigned_machine": "MTR-007",
+      "current_ticket": "MT-MTR-007-1",
+      "assignments": [
+        {
+          "machine_id": "MTR-007",
+          "ticket_id": "MT-MTR-007-1"
+        }
+      ]
+    },
+    {
+      "id": "TECH-029",
+      "name": "Gaurav Singh",
+      "role": "Mechanical Engineer",
+      "specialization": "Rotating Machinery",
+      "skills": [
+        "Mechanical",
+        "Bearings",
+        "Vibration Analysis",
+        "Alignment",
+        "Lubrication",
+        "Predictive Maintenance"
+      ],
+      "certifications": [
+        "Vibration Analysis",
+        "Rotating Equipment",
+        "Reliability Engineering"
+      ],
+      "department": "Mechanical Maintenance",
+      "experience_years": 15,
+      "availability": "Available",
+      "shift": {
+        "name": "General",
+        "start": "08:00",
+        "end": "17:00"
+      },
+      "plant_area": "Central Maintenance",
+      "current_workload": 1,
+      "max_workload": 3,
+      "assigned_machine": "CMP-002",
+      "current_ticket": "MT-CMP-002-1",
+      "assignments": [
+        {
+          "machine_id": "CMP-002",
+          "ticket_id": "MT-CMP-002-1"
+        }
+      ]
+    },
+    {
+      "id": "TECH-030",
+      "name": "Siddharth Roy",
+      "role": "Mechanical Technician",
+      "specialization": "Bearings & Lubrication",
+      "skills": [
+        "Mechanical",
+        "Bearings",
+        "Lubrication",
+        "Vibration Analysis",
+        "Preventive Maintenance"
+      ],
+      "certifications": [
+        "Mechanical Maintenance",
+        "Vibration Analysis"
+      ],
+      "department": "Mechanical Maintenance",
+      "experience_years": 6,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift A",
+        "start": "06:00",
+        "end": "14:00"
+      },
+      "plant_area": "Production Line 2",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-031",
+      "name": "Ravi Mishra",
+      "role": "Mechanical Technician",
+      "specialization": "Pumps",
+      "skills": [
+        "Pump",
+        "Mechanical Maintenance",
+        "Bearings",
+        "Alignment",
+        "Lubrication"
+      ],
+      "certifications": [
+        "Pump Maintenance",
+        "Mechanical Maintenance"
+      ],
+      "department": "Mechanical Maintenance",
+      "experience_years": 7,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift B",
+        "start": "14:00",
+        "end": "22:00"
+      },
+      "plant_area": "Production Line 2",
+      "current_workload": 1,
+      "max_workload": 3,
+      "assigned_machine": "PMP-004",
+      "current_ticket": "MT-PMP-004-1",
+      "assignments": [
+        {
+          "machine_id": "PMP-004",
+          "ticket_id": "MT-PMP-004-1"
+        }
+      ]
+    },
+    {
+      "id": "TECH-032",
+      "name": "Saurabh Tiwari",
+      "role": "Mechanical Engineer",
+      "specialization": "Pump & Fluid Systems",
+      "skills": [
+        "Pump",
+        "Hydraulics",
+        "Fluid Systems",
+        "Mechanical Maintenance",
+        "Condition Monitoring"
+      ],
+      "certifications": [
+        "Pump Maintenance",
+        "Hydraulics",
+        "Condition Monitoring"
+      ],
+      "department": "Mechanical Maintenance",
+      "experience_years": 11,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift C",
+        "start": "22:00",
+        "end": "06:00"
+      },
+      "plant_area": "Production Line 2",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-033",
+      "name": "Mukul Chawla",
+      "role": "Mechanical Technician",
+      "specialization": "Industrial Compressors",
+      "skills": [
+        "Compressor",
+        "Mechanical Maintenance",
+        "Bearings",
+        "Lubrication",
+        "Pressure Systems"
+      ],
+      "certifications": [
+        "Compressed Air Systems",
+        "Mechanical Maintenance"
+      ],
+      "department": "Mechanical Maintenance",
+      "experience_years": 9,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift A",
+        "start": "06:00",
+        "end": "14:00"
+      },
+      "plant_area": "Utility Block",
+      "current_workload": 1,
+      "max_workload": 3,
+      "assigned_machine": "CMP-003",
+      "current_ticket": "MT-CMP-003-1",
+      "assignments": [
+        {
+          "machine_id": "CMP-003",
+          "ticket_id": "MT-CMP-003-1"
+        }
+      ]
+    },
+    {
+      "id": "TECH-034",
+      "name": "Ajay Kulkarni",
+      "role": "Senior Mechanical Engineer",
+      "specialization": "Industrial Machinery",
+      "skills": [
+        "Mechanical",
+        "Bearings",
+        "Vibration Analysis",
+        "Alignment",
+        "Root Cause Analysis",
+        "Preventive Maintenance"
+      ],
+      "certifications": [
+        "Mechanical Maintenance",
+        "Vibration Analysis",
+        "Root Cause Analysis"
+      ],
+      "department": "Mechanical Maintenance",
+      "experience_years": 19,
+      "availability": "Available",
+      "shift": {
+        "name": "General",
+        "start": "08:00",
+        "end": "17:00"
+      },
+      "plant_area": "Central Maintenance",
+      "current_workload": 1,
+      "max_workload": 3,
+      "assigned_machine": "MTR-008",
+      "current_ticket": "MT-MTR-008-1",
+      "assignments": [
+        {
+          "machine_id": "MTR-008",
+          "ticket_id": "MT-MTR-008-1"
+        }
+      ]
+    },
+    {
+      "id": "TECH-035",
+      "name": "Ritesh Das",
+      "role": "Mechanical Technician",
+      "specialization": "General Mechanical",
+      "skills": [
+        "Mechanical",
+        "Bearings",
+        "Lubrication",
+        "Pumps",
+        "Preventive Maintenance"
+      ],
+      "certifications": [
+        "Mechanical Maintenance"
+      ],
+      "department": "Mechanical Maintenance",
+      "experience_years": 5,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift B",
+        "start": "14:00",
+        "end": "22:00"
+      },
+      "plant_area": "Production Line 2",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-036",
+      "name": "Faisal Ahmed",
+      "role": "Mechanical Technician",
+      "specialization": "Hydraulic Systems",
+      "skills": [
+        "Hydraulics",
+        "Pump",
+        "Fluid Systems",
+        "Valves",
+        "Mechanical Maintenance"
+      ],
+      "certifications": [
+        "Hydraulics",
+        "Pump Maintenance"
+      ],
+      "department": "Mechanical Maintenance",
+      "experience_years": 8,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift C",
+        "start": "22:00",
+        "end": "06:00"
+      },
+      "plant_area": "Production Line 2",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-037",
+      "name": "Lokesh Agarwal",
+      "role": "Mechanical Technician",
+      "specialization": "Rotating Equipment",
+      "skills": [
+        "Mechanical",
+        "Vibration Analysis",
+        "Bearings",
+        "Alignment",
+        "Predictive Maintenance"
+      ],
+      "certifications": [
+        "Vibration Analysis",
+        "Mechanical Maintenance"
+      ],
+      "department": "Mechanical Maintenance",
+      "experience_years": 10,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift A",
+        "start": "06:00",
+        "end": "14:00"
+      },
+      "plant_area": "Production Line 1",
+      "current_workload": 1,
+      "max_workload": 3,
+      "assigned_machine": "MTR-009",
+      "current_ticket": "MT-MTR-009-1",
+      "assignments": [
+        {
+          "machine_id": "MTR-009",
+          "ticket_id": "MT-MTR-009-1"
+        }
+      ]
+    },
+    {
+      "id": "TECH-038",
+      "name": "Shubham Verma",
+      "role": "Mechanical Technician",
+      "specialization": "Preventive Maintenance",
+      "skills": [
+        "Mechanical",
+        "Lubrication",
+        "Bearings",
+        "Preventive Maintenance",
+        "Inspection"
+      ],
+      "certifications": [
+        "Mechanical Maintenance",
+        "Lockout Tagout"
+      ],
+      "department": "Mechanical Maintenance",
+      "experience_years": 4,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift B",
+        "start": "14:00",
+        "end": "22:00"
+      },
+      "plant_area": "Production Line 1",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-039",
+      "name": "Vikas Bhat",
+      "role": "Mechanical Engineer",
+      "specialization": "Failure Analysis",
+      "skills": [
+        "Failure Analysis",
+        "Root Cause Analysis",
+        "Mechanical",
+        "Vibration Analysis",
+        "Condition Monitoring"
+      ],
+      "certifications": [
+        "Reliability Engineering",
+        "Root Cause Analysis",
+        "Vibration Analysis"
+      ],
+      "department": "Mechanical Maintenance",
+      "experience_years": 13,
+      "availability": "Available",
+      "shift": {
+        "name": "General",
+        "start": "08:00",
+        "end": "17:00"
+      },
+      "plant_area": "Central Maintenance",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-040",
+      "name": "Devendra Rawat",
+      "role": "Mechanical Technician",
+      "specialization": "Heavy Machinery",
+      "skills": [
+        "Mechanical",
+        "Bearings",
+        "Hydraulics",
+        "Lubrication",
+        "Preventive Maintenance"
+      ],
+      "certifications": [
+        "Mechanical Maintenance",
+        "Hydraulics"
+      ],
+      "department": "Mechanical Maintenance",
+      "experience_years": 12,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift C",
+        "start": "22:00",
+        "end": "06:00"
+      },
+      "plant_area": "Production Line 2",
+      "current_workload": 1,
+      "max_workload": 4,
+      "assigned_machine": "PMP-005",
+      "current_ticket": "MT-PMP-005-1",
+      "assignments": [
+        {
+          "machine_id": "PMP-005",
+          "ticket_id": "MT-PMP-005-1"
+        }
+      ]
+    },
+    {
+      "id": "TECH-041",
+      "name": "Siddharth Mehra",
+      "role": "Instrumentation Engineer",
+      "specialization": "Industrial Instrumentation",
+      "skills": [
+        "Instrumentation",
+        "Sensors",
+        "Calibration",
+        "Pressure Systems",
+        "Temperature Monitoring"
+      ],
+      "certifications": [
+        "Instrumentation",
+        "Calibration",
+        "Process Safety"
+      ],
+      "department": "Instrumentation & Control",
+      "experience_years": 14,
+      "availability": "Available",
+      "shift": {
+        "name": "General",
+        "start": "08:00",
+        "end": "17:00"
+      },
+      "plant_area": "Process Area",
+      "current_workload": 1,
+      "max_workload": 3,
+      "assigned_machine": "BLR-003",
+      "current_ticket": "MT-BLR-003-1",
+      "assignments": [
+        {
+          "machine_id": "BLR-003",
+          "ticket_id": "MT-BLR-003-1"
+        }
+      ]
+    },
+    {
+      "id": "TECH-042",
+      "name": "Nikhil Soni",
+      "role": "Instrumentation Technician",
+      "specialization": "Process Sensors",
+      "skills": [
+        "Sensors",
+        "Calibration",
+        "Temperature Monitoring",
+        "Pressure Systems",
+        "Instrumentation"
+      ],
+      "certifications": [
+        "Instrumentation",
+        "Calibration"
+      ],
+      "department": "Instrumentation & Control",
+      "experience_years": 7,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift A",
+        "start": "06:00",
+        "end": "14:00"
+      },
+      "plant_area": "Process Area",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-043",
+      "name": "Rajat Bedi",
+      "role": "Instrumentation Engineer",
+      "specialization": "Process Control",
+      "skills": [
+        "Instrumentation",
+        "Sensors",
+        "PLC",
+        "SCADA",
+        "Calibration"
+      ],
+      "certifications": [
+        "Process Control",
+        "Instrumentation",
+        "SCADA"
+      ],
+      "department": "Instrumentation & Control",
+      "experience_years": 12,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift B",
+        "start": "14:00",
+        "end": "22:00"
+      },
+      "plant_area": "Process Area",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-044",
+      "name": "Akash Sinha",
+      "role": "Instrumentation Technician",
+      "specialization": "Temperature & Pressure Instrumentation",
+      "skills": [
+        "Sensors",
+        "Temperature Monitoring",
+        "Pressure Systems",
+        "Calibration",
+        "Instrumentation"
+      ],
+      "certifications": [
+        "Instrumentation",
+        "Calibration"
+      ],
+      "department": "Instrumentation & Control",
+      "experience_years": 6,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift C",
+        "start": "22:00",
+        "end": "06:00"
+      },
+      "plant_area": "Process Area",
+      "current_workload": 1,
+      "max_workload": 3,
+      "assigned_machine": "BLR-004",
+      "current_ticket": "MT-BLR-004-1",
+      "assignments": [
+        {
+          "machine_id": "BLR-004",
+          "ticket_id": "MT-BLR-004-1"
+        }
+      ]
+    },
+    {
+      "id": "TECH-045",
+      "name": "Aman Kapoor",
+      "role": "Control Systems Engineer",
+      "specialization": "PLC & SCADA",
+      "skills": [
+        "PLC",
+        "SCADA",
+        "Sensors",
+        "Automation",
+        "Instrumentation"
+      ],
+      "certifications": [
+        "PLC Programming",
+        "SCADA",
+        "Industrial Automation"
+      ],
+      "department": "Instrumentation & Control",
+      "experience_years": 10,
+      "availability": "Available",
+      "shift": {
+        "name": "General",
+        "start": "08:00",
+        "end": "17:00"
+      },
+      "plant_area": "Control Room",
+      "current_workload": 1,
+      "max_workload": 3,
+      "assigned_machine": "PLC-001",
+      "current_ticket": "MT-PLC-001-1",
+      "assignments": [
+        {
+          "machine_id": "PLC-001",
+          "ticket_id": "MT-PLC-001-1"
+        }
+      ]
+    },
+    {
+      "id": "TECH-046",
+      "name": "Rohit Babu",
+      "role": "Instrumentation Technician",
+      "specialization": "Industrial Sensors",
+      "skills": [
+        "Sensors",
+        "Calibration",
+        "Instrumentation",
+        "Temperature Monitoring",
+        "Preventive Maintenance"
+      ],
+      "certifications": [
+        "Instrumentation",
+        "Calibration"
+      ],
+      "department": "Instrumentation & Control",
+      "experience_years": 5,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift A",
+        "start": "06:00",
+        "end": "14:00"
+      },
+      "plant_area": "Process Area",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-047",
+      "name": "Sahil Arora",
+      "role": "Instrumentation Engineer",
+      "specialization": "Process Measurement",
+      "skills": [
+        "Instrumentation",
+        "Sensors",
+        "Pressure Systems",
+        "Temperature Monitoring",
+        "Calibration"
+      ],
+      "certifications": [
+        "Instrumentation",
+        "Process Safety",
+        "Calibration"
+      ],
+      "department": "Instrumentation & Control",
+      "experience_years": 11,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift B",
+        "start": "14:00",
+        "end": "22:00"
+      },
+      "plant_area": "Process Area",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-048",
+      "name": "Varun Pillai",
+      "role": "Control Technician",
+      "specialization": "PLC Systems",
+      "skills": [
+        "PLC",
+        "Sensors",
+        "SCADA",
+        "Instrumentation",
+        "Automation"
+      ],
+      "certifications": [
+        "PLC Programming",
+        "Industrial Automation"
+      ],
+      "department": "Instrumentation & Control",
+      "experience_years": 8,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift C",
+        "start": "22:00",
+        "end": "06:00"
+      },
+      "plant_area": "Control Room",
+      "current_workload": 1,
+      "max_workload": 3,
+      "assigned_machine": "PLC-002",
+      "current_ticket": "MT-PLC-002-1",
+      "assignments": [
+        {
+          "machine_id": "PLC-002",
+          "ticket_id": "MT-PLC-002-1"
+        }
+      ]
+    },
+    {
+      "id": "TECH-049",
+      "name": "Kunal Bhatia",
+      "role": "Instrumentation Technician",
+      "specialization": "Calibration",
+      "skills": [
+        "Calibration",
+        "Instrumentation",
+        "Sensors",
+        "Pressure Systems",
+        "Temperature Monitoring"
+      ],
+      "certifications": [
+        "Calibration",
+        "Instrumentation"
+      ],
+      "department": "Instrumentation & Control",
+      "experience_years": 9,
+      "availability": "On Call",
+      "shift": {
+        "name": "General",
+        "start": "08:00",
+        "end": "17:00"
+      },
+      "plant_area": "Process Area",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-050",
+      "name": "Samar Khan",
+      "role": "Instrumentation Technician",
+      "specialization": "Industrial Measurement",
+      "skills": [
+        "Sensors",
+        "Instrumentation",
+        "Calibration",
+        "PLC",
+        "Preventive Maintenance"
+      ],
+      "certifications": [
+        "Instrumentation",
+        "PLC Programming"
+      ],
+      "department": "Instrumentation & Control",
+      "experience_years": 6,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift A",
+        "start": "06:00",
+        "end": "14:00"
+      },
+      "plant_area": "Process Area",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-051",
+      "name": "Arnav Joshi",
+      "role": "Automation Engineer",
+      "specialization": "Industrial Automation",
+      "skills": [
+        "Automation",
+        "PLC",
+        "Robotics",
+        "Sensors",
+        "SCADA",
+        "Drives"
+      ],
+      "certifications": [
+        "Industrial Automation",
+        "PLC Programming",
+        "Robotics"
+      ],
+      "department": "Automation & Robotics",
+      "experience_years": 13,
+      "availability": "Available",
+      "shift": {
+        "name": "General",
+        "start": "08:00",
+        "end": "17:00"
+      },
+      "plant_area": "Assembly Line",
+      "current_workload": 1,
+      "max_workload": 3,
+      "assigned_machine": "ROB-001",
+      "current_ticket": "MT-ROB-001-1",
+      "assignments": [
+        {
+          "machine_id": "ROB-001",
+          "ticket_id": "MT-ROB-001-1"
+        }
+      ]
+    },
+    {
+      "id": "TECH-052",
+      "name": "Ishan Roy",
+      "role": "Robotics Engineer",
+      "specialization": "Industrial Robotics",
+      "skills": [
+        "Robotics",
+        "Automation",
+        "PLC",
+        "Sensors",
+        "Machine Vision"
+      ],
+      "certifications": [
+        "Robotics",
+        "Industrial Automation",
+        "PLC Programming"
+      ],
+      "department": "Automation & Robotics",
+      "experience_years": 9,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift A",
+        "start": "06:00",
+        "end": "14:00"
+      },
+      "plant_area": "Assembly Line",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-053",
+      "name": "Yuvraj Singh",
+      "role": "Automation Technician",
+      "specialization": "PLC Systems",
+      "skills": [
+        "PLC",
+        "Automation",
+        "Sensors",
+        "SCADA",
+        "Electrical Systems"
+      ],
+      "certifications": [
+        "PLC Programming",
+        "Industrial Automation"
+      ],
+      "department": "Automation & Robotics",
+      "experience_years": 7,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift B",
+        "start": "14:00",
+        "end": "22:00"
+      },
+      "plant_area": "Assembly Line",
+      "current_workload": 1,
+      "max_workload": 3,
+      "assigned_machine": "PLC-003",
+      "current_ticket": "MT-PLC-003-1",
+      "assignments": [
+        {
+          "machine_id": "PLC-003",
+          "ticket_id": "MT-PLC-003-1"
+        }
+      ]
+    },
+    {
+      "id": "TECH-054",
+      "name": "Harsh Vardhan",
+      "role": "Robotics Technician",
+      "specialization": "Robotic Arms",
+      "skills": [
+        "Robotics",
+        "Automation",
+        "Sensors",
+        "Mechanical",
+        "Preventive Maintenance"
+      ],
+      "certifications": [
+        "Robotics",
+        "Industrial Automation"
+      ],
+      "department": "Automation & Robotics",
+      "experience_years": 6,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift C",
+        "start": "22:00",
+        "end": "06:00"
+      },
+      "plant_area": "Assembly Line",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-055",
+      "name": "Aditya Sen",
+      "role": "Automation Engineer",
+      "specialization": "Motion Control",
+      "skills": [
+        "Automation",
+        "Drives",
+        "PLC",
+        "Motor",
+        "Sensors"
+      ],
+      "certifications": [
+        "Industrial Drives",
+        "PLC Programming",
+        "Industrial Automation"
+      ],
+      "department": "Automation & Robotics",
+      "experience_years": 12,
+      "availability": "Available",
+      "shift": {
+        "name": "General",
+        "start": "08:00",
+        "end": "17:00"
+      },
+      "plant_area": "Production Line 1",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-056",
+      "name": "Rishabh Jain",
+      "role": "Automation Technician",
+      "specialization": "Sensors & Controls",
+      "skills": [
+        "Sensors",
+        "PLC",
+        "Automation",
+        "Electrical Systems",
+        "Preventive Maintenance"
+      ],
+      "certifications": [
+        "PLC Programming",
+        "Industrial Automation"
+      ],
+      "department": "Automation & Robotics",
+      "experience_years": 5,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift A",
+        "start": "06:00",
+        "end": "14:00"
+      },
+      "plant_area": "Assembly Line",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-057",
+      "name": "Kabir Malhotra",
+      "role": "Robotics Engineer",
+      "specialization": "Robotic Systems",
+      "skills": [
+        "Robotics",
+        "Machine Vision",
+        "Automation",
+        "PLC",
+        "Sensors"
+      ],
+      "certifications": [
+        "Robotics",
+        "Machine Vision",
+        "Industrial Automation"
+      ],
+      "department": "Automation & Robotics",
+      "experience_years": 11,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift B",
+        "start": "14:00",
+        "end": "22:00"
+      },
+      "plant_area": "Assembly Line",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-058",
+      "name": "Dhruv Patel",
+      "role": "Automation Technician",
+      "specialization": "PLC & Sensors",
+      "skills": [
+        "PLC",
+        "Sensors",
+        "Automation",
+        "SCADA",
+        "Preventive Maintenance"
+      ],
+      "certifications": [
+        "PLC Programming",
+        "SCADA"
+      ],
+      "department": "Automation & Robotics",
+      "experience_years": 8,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift C",
+        "start": "22:00",
+        "end": "06:00"
+      },
+      "plant_area": "Control Room",
+      "current_workload": 1,
+      "max_workload": 3,
+      "assigned_machine": "PLC-004",
+      "current_ticket": "MT-PLC-004-1",
+      "assignments": [
+        {
+          "machine_id": "PLC-004",
+          "ticket_id": "MT-PLC-004-1"
+        }
+      ]
+    },
+    {
+      "id": "TECH-059",
+      "name": "Aryan Kapoor",
+      "role": "Automation Engineer",
+      "specialization": "Factory Automation",
+      "skills": [
+        "Automation",
+        "PLC",
+        "Robotics",
+        "SCADA",
+        "Sensors"
+      ],
+      "certifications": [
+        "Industrial Automation",
+        "PLC Programming"
+      ],
+      "department": "Automation & Robotics",
+      "experience_years": 10,
+      "availability": "On Call",
+      "shift": {
+        "name": "General",
+        "start": "08:00",
+        "end": "17:00"
+      },
+      "plant_area": "Assembly Line",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-060",
+      "name": "Manav Gupta",
+      "role": "Automation Technician",
+      "specialization": "Industrial Controls",
+      "skills": [
+        "PLC",
+        "Automation",
+        "Sensors",
+        "Drives",
+        "Preventive Maintenance"
+      ],
+      "certifications": [
+        "PLC Programming",
+        "Industrial Automation"
+      ],
+      "department": "Automation & Robotics",
+      "experience_years": 6,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift A",
+        "start": "06:00",
+        "end": "14:00"
+      },
+      "plant_area": "Production Line 1",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-061",
+      "name": "Omkar Patil",
+      "role": "Production Engineer",
+      "specialization": "Production Systems",
+      "skills": [
+        "Production",
+        "Process Optimization",
+        "Quality Control",
+        "Lean Manufacturing",
+        "Preventive Maintenance"
+      ],
+      "certifications": [
+        "Lean Manufacturing",
+        "Six Sigma"
+      ],
+      "department": "Production",
+      "experience_years": 10,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift A",
+        "start": "06:00",
+        "end": "14:00"
+      },
+      "plant_area": "Production Line 1",
+      "current_workload": 1,
+      "max_workload": 3,
+      "assigned_machine": "MTR-010",
+      "current_ticket": "MT-MTR-010-1",
+      "assignments": [
+        {
+          "machine_id": "MTR-010",
+          "ticket_id": "MT-MTR-010-1"
+        }
+      ]
+    },
+    {
+      "id": "TECH-062",
+      "name": "Nilesh Pawar",
+      "role": "Production Technician",
+      "specialization": "Production Equipment",
+      "skills": [
+        "Production",
+        "Machine Operation",
+        "Inspection",
+        "Preventive Maintenance",
+        "Safety"
+      ],
+      "certifications": [
+        "Machine Safety",
+        "Lockout Tagout"
+      ],
+      "department": "Production",
+      "experience_years": 7,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift B",
+        "start": "14:00",
+        "end": "22:00"
+      },
+      "plant_area": "Production Line 1",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-063",
+      "name": "Akshay Deshmukh",
+      "role": "Production Engineer",
+      "specialization": "Process Engineering",
+      "skills": [
+        "Production",
+        "Process Optimization",
+        "Quality Control",
+        "Root Cause Analysis",
+        "Safety"
+      ],
+      "certifications": [
+        "Six Sigma",
+        "Lean Manufacturing"
+      ],
+      "department": "Production",
+      "experience_years": 12,
+      "availability": "Available",
+      "shift": {
+        "name": "General",
+        "start": "08:00",
+        "end": "17:00"
+      },
+      "plant_area": "Production Line 2",
+      "current_workload": 1,
+      "max_workload": 3,
+      "assigned_machine": "PMP-006",
+      "current_ticket": "MT-PMP-006-1",
+      "assignments": [
+        {
+          "machine_id": "PMP-006",
+          "ticket_id": "MT-PMP-006-1"
+        }
+      ]
+    },
+    {
+      "id": "TECH-064",
+      "name": "Sagar Jadhav",
+      "role": "Production Technician",
+      "specialization": "Assembly Equipment",
+      "skills": [
+        "Production",
+        "Machine Operation",
+        "Mechanical",
+        "Inspection",
+        "Preventive Maintenance"
+      ],
+      "certifications": [
+        "Machine Safety"
+      ],
+      "department": "Production",
+      "experience_years": 5,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift C",
+        "start": "22:00",
+        "end": "06:00"
+      },
+      "plant_area": "Assembly Line",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-065",
+      "name": "Chirag Shah",
+      "role": "Production Supervisor",
+      "specialization": "Production Operations",
+      "skills": [
+        "Production",
+        "Process Optimization",
+        "Safety",
+        "Quality Control",
+        "Root Cause Analysis"
+      ],
+      "certifications": [
+        "Lean Manufacturing",
+        "Six Sigma",
+        "Industrial Safety"
+      ],
+      "department": "Production",
+      "experience_years": 15,
+      "availability": "Available",
+      "shift": {
+        "name": "General",
+        "start": "08:00",
+        "end": "17:00"
+      },
+      "plant_area": "Production Line 1",
+      "current_workload": 0,
+      "max_workload": 2,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-066",
+      "name": "Kartik Rao",
+      "role": "Production Technician",
+      "specialization": "Machine Operation",
+      "skills": [
+        "Production",
+        "Machine Operation",
+        "Inspection",
+        "Safety",
+        "Preventive Maintenance"
+      ],
+      "certifications": [
+        "Machine Safety",
+        "Lockout Tagout"
+      ],
+      "department": "Production",
+      "experience_years": 6,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift A",
+        "start": "06:00",
+        "end": "14:00"
+      },
+      "plant_area": "Production Line 2",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-067",
+      "name": "Tejas Kulkarni",
+      "role": "Production Engineer",
+      "specialization": "Manufacturing Engineering",
+      "skills": [
+        "Production",
+        "Process Optimization",
+        "Quality Control",
+        "Mechanical",
+        "Root Cause Analysis"
+      ],
+      "certifications": [
+        "Six Sigma",
+        "Lean Manufacturing"
+      ],
+      "department": "Production",
+      "experience_years": 9,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift B",
+        "start": "14:00",
+        "end": "22:00"
+      },
+      "plant_area": "Production Line 2",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-068",
+      "name": "Rohan Kulkarni",
+      "role": "Production Technician",
+      "specialization": "Production Equipment",
+      "skills": [
+        "Production",
+        "Mechanical",
+        "Inspection",
+        "Machine Operation",
+        "Preventive Maintenance"
+      ],
+      "certifications": [
+        "Machine Safety"
+      ],
+      "department": "Production",
+      "experience_years": 4,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift C",
+        "start": "22:00",
+        "end": "06:00"
+      },
+      "plant_area": "Production Line 1",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-069",
+      "name": "Varun Sharma",
+      "role": "Production Engineer",
+      "specialization": "Manufacturing Systems",
+      "skills": [
+        "Production",
+        "Process Optimization",
+        "Automation",
+        "Quality Control",
+        "Safety"
+      ],
+      "certifications": [
+        "Lean Manufacturing",
+        "Six Sigma"
+      ],
+      "department": "Production",
+      "experience_years": 11,
+      "availability": "On Call",
+      "shift": {
+        "name": "General",
+        "start": "08:00",
+        "end": "17:00"
+      },
+      "plant_area": "Assembly Line",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-070",
+      "name": "Abhinav Rao",
+      "role": "Production Technician",
+      "specialization": "Assembly Equipment",
+      "skills": [
+        "Production",
+        "Machine Operation",
+        "Mechanical",
+        "Inspection",
+        "Safety"
+      ],
+      "certifications": [
+        "Machine Safety"
+      ],
+      "department": "Production",
+      "experience_years": 5,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift A",
+        "start": "06:00",
+        "end": "14:00"
+      },
+      "plant_area": "Assembly Line",
+      "current_workload": 1,
+      "max_workload": 3,
+      "assigned_machine": "ROB-002",
+      "current_ticket": "MT-ROB-002-1",
+      "assignments": [
+        {
+          "machine_id": "ROB-002",
+          "ticket_id": "MT-ROB-002-1"
+        }
+      ]
+    },
+    {
+      "id": "TECH-071",
+      "name": "Dr. Anurag Bose",
+      "role": "Senior Reliability Engineer",
+      "specialization": "Asset Reliability",
+      "skills": [
+        "Reliability Engineering",
+        "Predictive Maintenance",
+        "Condition Monitoring",
+        "Failure Analysis",
+        "Vibration Analysis",
+        "Root Cause Analysis"
+      ],
+      "certifications": [
+        "Reliability Engineering",
+        "Vibration Analysis",
+        "Predictive Maintenance"
+      ],
+      "department": "Reliability Engineering",
+      "experience_years": 20,
+      "availability": "Available",
+      "shift": {
+        "name": "General",
+        "start": "08:00",
+        "end": "17:00"
+      },
+      "plant_area": "Central Maintenance",
+      "current_workload": 1,
+      "max_workload": 3,
+      "assigned_machine": "MTR-011",
+      "current_ticket": "MT-MTR-011-1",
+      "assignments": [
+        {
+          "machine_id": "MTR-011",
+          "ticket_id": "MT-MTR-011-1"
+        }
+      ]
+    },
+    {
+      "id": "TECH-072",
+      "name": "Nitin Verma",
+      "role": "Reliability Engineer",
+      "specialization": "Predictive Maintenance",
+      "skills": [
+        "Predictive Maintenance",
+        "Vibration Analysis",
+        "Condition Monitoring",
+        "Failure Analysis",
+        "Data Analysis"
+      ],
+      "certifications": [
+        "Predictive Maintenance",
+        "Vibration Analysis"
+      ],
+      "department": "Reliability Engineering",
+      "experience_years": 12,
+      "availability": "Available",
+      "shift": {
+        "name": "General",
+        "start": "08:00",
+        "end": "17:00"
+      },
+      "plant_area": "Central Maintenance",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-073",
+      "name": "Arvind Nair",
+      "role": "Reliability Technician",
+      "specialization": "Vibration Monitoring",
+      "skills": [
+        "Vibration Analysis",
+        "Condition Monitoring",
+        "Thermal Imaging",
+        "Inspection",
+        "Predictive Maintenance"
+      ],
+      "certifications": [
+        "Vibration Analysis",
+        "Thermal Imaging"
+      ],
+      "department": "Reliability Engineering",
+      "experience_years": 9,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift A",
+        "start": "06:00",
+        "end": "14:00"
+      },
+      "plant_area": "Central Maintenance",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-074",
+      "name": "Shankar Iyer",
+      "role": "Reliability Engineer",
+      "specialization": "Root Cause Analysis",
+      "skills": [
+        "Root Cause Analysis",
+        "Failure Analysis",
+        "Mechanical",
+        "Condition Monitoring",
+        "Predictive Maintenance"
+      ],
+      "certifications": [
+        "Root Cause Analysis",
+        "Reliability Engineering"
+      ],
+      "department": "Reliability Engineering",
+      "experience_years": 16,
+      "availability": "Available",
+      "shift": {
+        "name": "General",
+        "start": "08:00",
+        "end": "17:00"
+      },
+      "plant_area": "Central Maintenance",
+      "current_workload": 1,
+      "max_workload": 3,
+      "assigned_machine": "CMP-004",
+      "current_ticket": "MT-CMP-004-1",
+      "assignments": [
+        {
+          "machine_id": "CMP-004",
+          "ticket_id": "MT-CMP-004-1"
+        }
+      ]
+    },
+    {
+      "id": "TECH-075",
+      "name": "Pranav Shah",
+      "role": "Reliability Technician",
+      "specialization": "Machine Inspection",
+      "skills": [
+        "Inspection",
+        "Condition Monitoring",
+        "Vibration Analysis",
+        "Mechanical",
+        "Preventive Maintenance"
+      ],
+      "certifications": [
+        "Vibration Analysis",
+        "Mechanical Maintenance"
+      ],
+      "department": "Reliability Engineering",
+      "experience_years": 7,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift B",
+        "start": "14:00",
+        "end": "22:00"
+      },
+      "plant_area": "Production Line 1",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-076",
+      "name": "Keshav Rao",
+      "role": "Reliability Engineer",
+      "specialization": "Asset Health Analytics",
+      "skills": [
+        "Predictive Maintenance",
+        "Data Analysis",
+        "Condition Monitoring",
+        "Failure Analysis",
+        "Reliability Engineering"
+      ],
+      "certifications": [
+        "Predictive Maintenance",
+        "Reliability Engineering"
+      ],
+      "department": "Reliability Engineering",
+      "experience_years": 10,
+      "availability": "Available",
+      "shift": {
+        "name": "General",
+        "start": "08:00",
+        "end": "17:00"
+      },
+      "plant_area": "Central Maintenance",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-077",
+      "name": "Yogesh Patil",
+      "role": "Reliability Technician",
+      "specialization": "Preventive Inspection",
+      "skills": [
+        "Inspection",
+        "Preventive Maintenance",
+        "Mechanical",
+        "Lubrication",
+        "Condition Monitoring"
+      ],
+      "certifications": [
+        "Mechanical Maintenance"
+      ],
+      "department": "Reliability Engineering",
+      "experience_years": 6,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift C",
+        "start": "22:00",
+        "end": "06:00"
+      },
+      "plant_area": "Production Line 2",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-078",
+      "name": "Harshil Mehta",
+      "role": "Reliability Engineer",
+      "specialization": "Rotating Equipment Reliability",
+      "skills": [
+        "Vibration Analysis",
+        "Predictive Maintenance",
+        "Mechanical",
+        "Bearings",
+        "Condition Monitoring"
+      ],
+      "certifications": [
+        "Vibration Analysis",
+        "Predictive Maintenance",
+        "Rotating Equipment"
+      ],
+      "department": "Reliability Engineering",
+      "experience_years": 14,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift A",
+        "start": "06:00",
+        "end": "14:00"
+      },
+      "plant_area": "Production Line 2",
+      "current_workload": 1,
+      "max_workload": 3,
+      "assigned_machine": "PMP-007",
+      "current_ticket": "MT-PMP-007-1",
+      "assignments": [
+        {
+          "machine_id": "PMP-007",
+          "ticket_id": "MT-PMP-007-1"
+        }
+      ]
+    },
+    {
+      "id": "TECH-079",
+      "name": "Rajat Kumar",
+      "role": "Reliability Technician",
+      "specialization": "Equipment Inspection",
+      "skills": [
+        "Inspection",
+        "Mechanical",
+        "Vibration Analysis",
+        "Preventive Maintenance",
+        "Safety"
+      ],
+      "certifications": [
+        "Mechanical Maintenance",
+        "Vibration Analysis"
+      ],
+      "department": "Reliability Engineering",
+      "experience_years": 8,
+      "availability": "On Call",
+      "shift": {
+        "name": "General",
+        "start": "08:00",
+        "end": "17:00"
+      },
+      "plant_area": "Central Maintenance",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-080",
+      "name": "Abhay Singh",
+      "role": "Senior Reliability Engineer",
+      "specialization": "Predictive Asset Management",
+      "skills": [
+        "Predictive Maintenance",
+        "Reliability Engineering",
+        "Condition Monitoring",
+        "Failure Analysis",
+        "Root Cause Analysis",
+        "Vibration Analysis"
+      ],
+      "certifications": [
+        "Reliability Engineering",
+        "Predictive Maintenance",
+        "Root Cause Analysis"
+      ],
+      "department": "Reliability Engineering",
+      "experience_years": 18,
+      "availability": "Available",
+      "shift": {
+        "name": "General",
+        "start": "08:00",
+        "end": "17:00"
+      },
+      "plant_area": "Central Maintenance",
+      "current_workload": 1,
+      "max_workload": 3,
+      "assigned_machine": "MTR-012",
+      "current_ticket": "MT-MTR-012-1",
+      "assignments": [
+        {
+          "machine_id": "MTR-012",
+          "ticket_id": "MT-MTR-012-1"
+        }
+      ]
+    },
+    {
+      "id": "TECH-081",
+      "name": "Vivek Sharma",
+      "role": "Maintenance Planner",
+      "specialization": "Maintenance Planning",
+      "skills": [
+        "Maintenance Planning",
+        "Preventive Maintenance",
+        "Work Orders",
+        "Scheduling",
+        "Spare Parts"
+      ],
+      "certifications": [
+        "Maintenance Planning",
+        "CMMS"
+      ],
+      "department": "Maintenance Planning",
+      "experience_years": 12,
+      "availability": "Available",
+      "shift": {
+        "name": "General",
+        "start": "08:00",
+        "end": "17:00"
+      },
+      "plant_area": "Maintenance Office",
+      "current_workload": 0,
+      "max_workload": 8,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-082",
+      "name": "Sandeep Gupta",
+      "role": "Maintenance Planner",
+      "specialization": "Shutdown Planning",
+      "skills": [
+        "Maintenance Planning",
+        "Shutdown Planning",
+        "Scheduling",
+        "Work Orders",
+        "Safety"
+      ],
+      "certifications": [
+        "Maintenance Planning",
+        "Shutdown Management"
+      ],
+      "department": "Maintenance Planning",
+      "experience_years": 10,
+      "availability": "Available",
+      "shift": {
+        "name": "General",
+        "start": "08:00",
+        "end": "17:00"
+      },
+      "plant_area": "Maintenance Office",
+      "current_workload": 0,
+      "max_workload": 7,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-083",
+      "name": "Manoj Kumar",
+      "role": "Maintenance Coordinator",
+      "specialization": "Maintenance Operations",
+      "skills": [
+        "Maintenance Planning",
+        "Work Orders",
+        "Scheduling",
+        "Safety",
+        "Preventive Maintenance"
+      ],
+      "certifications": [
+        "CMMS",
+        "Industrial Safety"
+      ],
+      "department": "Maintenance Planning",
+      "experience_years": 9,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift A",
+        "start": "06:00",
+        "end": "14:00"
+      },
+      "plant_area": "Maintenance Office",
+      "current_workload": 0,
+      "max_workload": 6,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-084",
+      "name": "Ravi Kapoor",
+      "role": "Maintenance Planner",
+      "specialization": "Preventive Maintenance",
+      "skills": [
+        "Preventive Maintenance",
+        "Maintenance Planning",
+        "Scheduling",
+        "Work Orders",
+        "Spare Parts"
+      ],
+      "certifications": [
+        "Maintenance Planning",
+        "CMMS"
+      ],
+      "department": "Maintenance Planning",
+      "experience_years": 8,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift B",
+        "start": "14:00",
+        "end": "22:00"
+      },
+      "plant_area": "Maintenance Office",
+      "current_workload": 0,
+      "max_workload": 7,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-085",
+      "name": "Ankit Soni",
+      "role": "Maintenance Coordinator",
+      "specialization": "Work Order Management",
+      "skills": [
+        "Work Orders",
+        "Maintenance Planning",
+        "Scheduling",
+        "CMMS",
+        "Spare Parts"
+      ],
+      "certifications": [
+        "CMMS",
+        "Maintenance Planning"
+      ],
+      "department": "Maintenance Planning",
+      "experience_years": 7,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift C",
+        "start": "22:00",
+        "end": "06:00"
+      },
+      "plant_area": "Maintenance Office",
+      "current_workload": 0,
+      "max_workload": 6,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-086",
+      "name": "Piyush Jain",
+      "role": "Spare Parts Coordinator",
+      "specialization": "Maintenance Stores",
+      "skills": [
+        "Spare Parts",
+        "Inventory",
+        "Work Orders",
+        "Maintenance Planning",
+        "Procurement"
+      ],
+      "certifications": [
+        "CMMS",
+        "Inventory Management"
+      ],
+      "department": "Maintenance Planning",
+      "experience_years": 6,
+      "availability": "Available",
+      "shift": {
+        "name": "General",
+        "start": "08:00",
+        "end": "17:00"
+      },
+      "plant_area": "Maintenance Stores",
+      "current_workload": 0,
+      "max_workload": 6,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-087",
+      "name": "Rohit Agarwal",
+      "role": "Maintenance Scheduler",
+      "specialization": "Shutdown Scheduling",
+      "skills": [
+        "Scheduling",
+        "Shutdown Planning",
+        "Maintenance Planning",
+        "Work Orders",
+        "Safety"
+      ],
+      "certifications": [
+        "Shutdown Management",
+        "CMMS"
+      ],
+      "department": "Maintenance Planning",
+      "experience_years": 9,
+      "availability": "Available",
+      "shift": {
+        "name": "General",
+        "start": "08:00",
+        "end": "17:00"
+      },
+      "plant_area": "Maintenance Office",
+      "current_workload": 0,
+      "max_workload": 6,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-088",
+      "name": "Kishore Menon",
+      "role": "Maintenance Coordinator",
+      "specialization": "Field Maintenance Coordination",
+      "skills": [
+        "Maintenance Planning",
+        "Work Orders",
+        "Safety",
+        "Scheduling",
+        "Inspection"
+      ],
+      "certifications": [
+        "Industrial Safety",
+        "CMMS"
+      ],
+      "department": "Maintenance Planning",
+      "experience_years": 11,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift A",
+        "start": "06:00",
+        "end": "14:00"
+      },
+      "plant_area": "Maintenance Office",
+      "current_workload": 0,
+      "max_workload": 7,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-089",
+      "name": "Rajesh Nair",
+      "role": "Maintenance Planner",
+      "specialization": "Asset Maintenance Planning",
+      "skills": [
+        "Maintenance Planning",
+        "Preventive Maintenance",
+        "Work Orders",
+        "Scheduling",
+        "Condition Monitoring"
+      ],
+      "certifications": [
+        "Maintenance Planning",
+        "CMMS"
+      ],
+      "department": "Maintenance Planning",
+      "experience_years": 13,
+      "availability": "On Call",
+      "shift": {
+        "name": "General",
+        "start": "08:00",
+        "end": "17:00"
+      },
+      "plant_area": "Maintenance Office",
+      "current_workload": 0,
+      "max_workload": 7,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-090",
+      "name": "Ashwin Rao",
+      "role": "Maintenance Coordinator",
+      "specialization": "Field Service",
+      "skills": [
+        "Maintenance Planning",
+        "Inspection",
+        "Safety",
+        "Mechanical",
+        "Work Orders"
+      ],
+      "certifications": [
+        "Industrial Safety",
+        "Mechanical Maintenance"
+      ],
+      "department": "Maintenance Planning",
+      "experience_years": 8,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift B",
+        "start": "14:00",
+        "end": "22:00"
+      },
+      "plant_area": "Production Line 2",
+      "current_workload": 0,
+      "max_workload": 6,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-091",
+      "name": "Karthik Raman",
+      "role": "Operations Engineer",
+      "specialization": "Plant Operations",
+      "skills": [
+        "Plant Operations",
+        "Process Optimization",
+        "Safety",
+        "Production",
+        "Energy Management"
+      ],
+      "certifications": [
+        "Industrial Safety",
+        "Energy Management"
+      ],
+      "department": "Operations",
+      "experience_years": 14,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift A",
+        "start": "06:00",
+        "end": "14:00"
+      },
+      "plant_area": "Control Room",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-092",
+      "name": "Suman Das",
+      "role": "Operations Technician",
+      "specialization": "Plant Operations",
+      "skills": [
+        "Plant Operations",
+        "Machine Operation",
+        "Safety",
+        "Inspection",
+        "Production"
+      ],
+      "certifications": [
+        "Industrial Safety",
+        "Machine Safety"
+      ],
+      "department": "Operations",
+      "experience_years": 8,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift B",
+        "start": "14:00",
+        "end": "22:00"
+      },
+      "plant_area": "Control Room",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-093",
+      "name": "Ramesh Pillai",
+      "role": "Operations Engineer",
+      "specialization": "Process Operations",
+      "skills": [
+        "Plant Operations",
+        "Process Optimization",
+        "Safety",
+        "Energy Management",
+        "Root Cause Analysis"
+      ],
+      "certifications": [
+        "Industrial Safety",
+        "Process Safety"
+      ],
+      "department": "Operations",
+      "experience_years": 12,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift C",
+        "start": "22:00",
+        "end": "06:00"
+      },
+      "plant_area": "Control Room",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-094",
+      "name": "Naveen Kumar",
+      "role": "Operations Technician",
+      "specialization": "Utility Operations",
+      "skills": [
+        "Plant Operations",
+        "Boiler",
+        "Pumps",
+        "Safety",
+        "Inspection"
+      ],
+      "certifications": [
+        "Industrial Safety",
+        "Boiler Operations"
+      ],
+      "department": "Operations",
+      "experience_years": 7,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift A",
+        "start": "06:00",
+        "end": "14:00"
+      },
+      "plant_area": "Utility Block",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-095",
+      "name": "Akhil Thomas",
+      "role": "Operations Engineer",
+      "specialization": "Energy & Utilities",
+      "skills": [
+        "Energy Management",
+        "Plant Operations",
+        "Boiler",
+        "Compressed Air Systems",
+        "Process Optimization"
+      ],
+      "certifications": [
+        "Energy Management",
+        "Industrial Safety"
+      ],
+      "department": "Operations",
+      "experience_years": 11,
+      "availability": "Available",
+      "shift": {
+        "name": "General",
+        "start": "08:00",
+        "end": "17:00"
+      },
+      "plant_area": "Utility Block",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-096",
+      "name": "Rohit Nair",
+      "role": "Operations Technician",
+      "specialization": "Production Operations",
+      "skills": [
+        "Plant Operations",
+        "Production",
+        "Machine Operation",
+        "Safety",
+        "Inspection"
+      ],
+      "certifications": [
+        "Industrial Safety",
+        "Machine Safety"
+      ],
+      "department": "Operations",
+      "experience_years": 6,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift B",
+        "start": "14:00",
+        "end": "22:00"
+      },
+      "plant_area": "Production Line 1",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-097",
+      "name": "Suraj Mehta",
+      "role": "Operations Supervisor",
+      "specialization": "Plant Operations",
+      "skills": [
+        "Plant Operations",
+        "Production",
+        "Safety",
+        "Process Optimization",
+        "Root Cause Analysis"
+      ],
+      "certifications": [
+        "Industrial Safety",
+        "Process Safety",
+        "Lean Manufacturing"
+      ],
+      "department": "Operations",
+      "experience_years": 17,
+      "availability": "Available",
+      "shift": {
+        "name": "General",
+        "start": "08:00",
+        "end": "17:00"
+      },
+      "plant_area": "Control Room",
+      "current_workload": 0,
+      "max_workload": 2,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-098",
+      "name": "Manish Verma",
+      "role": "Operations Technician",
+      "specialization": "Process Operations",
+      "skills": [
+        "Plant Operations",
+        "Process Optimization",
+        "Inspection",
+        "Safety",
+        "Production"
+      ],
+      "certifications": [
+        "Industrial Safety"
+      ],
+      "department": "Operations",
+      "experience_years": 5,
+      "availability": "On Call",
+      "shift": {
+        "name": "Shift C",
+        "start": "22:00",
+        "end": "06:00"
+      },
+      "plant_area": "Process Area",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-099",
+      "name": "Dev Shah",
+      "role": "Maintenance Engineer",
+      "specialization": "Multi-Discipline Maintenance",
+      "skills": [
+        "Mechanical Maintenance",
+        "Electrical Systems",
+        "Preventive Maintenance",
+        "Inspection",
+        "Vibration Analysis",
+        "Safety"
+      ],
+      "certifications": [
+        "Mechanical Maintenance",
+        "Electrical Safety",
+        "Vibration Analysis"
+      ],
+      "department": "Mechanical Maintenance",
+      "experience_years": 11,
+      "availability": "Available",
+      "shift": {
+        "name": "Shift B",
+        "start": "14:00",
+        "end": "22:00"
+      },
+      "plant_area": "Production Line 1",
+      "current_workload": 0,
+      "max_workload": 4,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    },
+    {
+      "id": "TECH-100",
+      "name": "Adarsh Menon",
+      "role": "Senior Maintenance Engineer",
+      "specialization": "Industrial Maintenance",
+      "skills": [
+        "Mechanical Maintenance",
+        "Electrical Systems",
+        "Predictive Maintenance",
+        "Vibration Analysis",
+        "Root Cause Analysis",
+        "Preventive Maintenance"
+      ],
+      "certifications": [
+        "Reliability Engineering",
+        "Vibration Analysis",
+        "Industrial Safety",
+        "Predictive Maintenance"
+      ],
+      "department": "Mechanical Maintenance",
+      "experience_years": 18,
+      "availability": "Available",
+      "shift": {
+        "name": "General",
+        "start": "08:00",
+        "end": "17:00"
+      },
+      "plant_area": "Central Maintenance",
+      "current_workload": 0,
+      "max_workload": 3,
+      "assigned_machine": null,
+      "current_ticket": null,
+      "assignments": []
+    }
+  ]
+}
