@@ -1,62 +1,26 @@
-import { Routes, Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
-import FactoryOverview from "../pages/FactoryOverview";
-import DigitalTwins from "../pages/DigitalTwins";
-import AIControlCenter from "../pages/AIControlCenter";
-import AICopilot from "../pages/AICopilot";
-import Maintenance from "../pages/Maintenance";
-import Sustainability from "../pages/Sustainability";
-import Reports from "../pages/Reports";
-import Settings from "../pages/Settings";
-import FixTraceWorkbench from "../pages/FixTraceWorkbench";
+import DigitalTwin from "../pages/DigitalTwin";
+import Campus from "../pages/Campus";
+import Ledger from "../pages/Ledger";
+import Scenarios from "../pages/Scenarios";
+import Compute from "../pages/Compute";
+import EnergyEvidence from "../pages/EnergyEvidence";
+import NotFound from "../pages/NotFound";
 
 export default function AppRoutes() {
   return (
     <Routes>
+      <Route path="/twin" element={<DigitalTwin />} />
+      <Route path="/" element={<Campus />} />
+      <Route path="/ledger" element={<Ledger />} />
       <Route
-        path="/"
-        element={<FactoryOverview />}
+        path="/scenarios"
+        element={<Scenarios />}
       />
-
-      <Route
-        path="/digital-twins"
-        element={<DigitalTwins />}
-      />
-
-      <Route
-        path="/ai-control-center"
-        element={<AIControlCenter />}
-      />
-
-      <Route
-        path="/maintenance"
-        element={<Maintenance />}
-      />
-
-      <Route
-        path="/fixtrace"
-        element={<FixTraceWorkbench />}
-      />
-
-      <Route
-        path="/sustainability"
-        element={<Sustainability />}
-      />
-
-      <Route
-        path="/reports"
-        element={<Reports />}
-      />
-
-      <Route
-        path="/ai-copilot"
-        element={<AICopilot />}
-      />
-
-      <Route
-        path="/settings"
-        element={<Settings />}
-      />
+      <Route path="/compute" element={<Compute />} />
+      <Route path="/energy" element={<EnergyEvidence />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }

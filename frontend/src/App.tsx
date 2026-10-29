@@ -4,9 +4,9 @@ import MainLayout from "./components/layout/MainLayout";
 import Sidebar from "./components/layout/Sidebar";
 import Topbar from "./components/layout/Topbar";
 import Workspace from "./components/layout/Workspace";
-import {
-  MachineSelectionProvider,
-} from "./context/MachineSelectionContext";
+
+import { TwinProvider } from "./features/dhun/context/TwinContext";
+import { AssetRegistryProvider } from "./features/dhun/registry/AssetRegistryContext";
 
 function App() {
   const [sidebarCollapsed, setSidebarCollapsed] =
@@ -22,26 +22,31 @@ function App() {
       }
     }
 
-    window.addEventListener(
-      "resize",
-      handleResize
-    );
+    function handleKeyDown(event: KeyboardEvent) {
+      if (event.key === "Escape") {
+        setMobileSidebarOpen(false);
+      }
+    }
+
+    window.addEventListener("resize", handleResize);
+    window.addEventListener("keydown", handleKeyDown);
 
     return () => {
       window.removeEventListener(
         "resize",
         handleResize
       );
+      window.removeEventListener(
+        "keydown",
+        handleKeyDown
+      );
     };
   }, []);
 
   return (
-    <MachineSelectionProvider>
-      <MainLayout>
-        {/* ================================
-            SIDEBAR
-        ================================= */}
-
+    <AssetRegistryProvider>
+      <TwinProvider>
+        <MainLayout>
         <Sidebar
           collapsed={sidebarCollapsed}
           mobileOpen={mobileSidebarOpen}
@@ -49,39 +54,26 @@ function App() {
             setMobileSidebarOpen(false)
           }
           onToggleCollapse={() =>
-            setSidebarCollapsed(
-              (value) => !value
-            )
+            setSidebarCollapsed((value) => !value)
           }
         />
 
-        {/* ================================
-            MAIN APPLICATION AREA
-        ================================= */}
-
-        <div className="flex min-w-0 flex-1 flex-col">
-
-          {/* Topbar */}
-
+        <div className="flex min-w-0 flex-1 flex-col h-full min-h-0 overflow-hidden">
           <Topbar
             sidebarCollapsed={sidebarCollapsed}
             onToggleSidebar={() =>
-              setSidebarCollapsed(
-                (value) => !value
-              )
+              setSidebarCollapsed((value) => !value)
             }
             onOpenMobileSidebar={() =>
               setMobileSidebarOpen(true)
             }
           />
 
-          {/* Page Workspace */}
-
           <Workspace />
-
         </div>
       </MainLayout>
-    </MachineSelectionProvider>
+    </TwinProvider>
+  </AssetRegistryProvider>
   );
 }
 

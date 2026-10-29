@@ -1,234 +1,88 @@
-# CarbonTwin OS
+# Dhun Twin OS
 
-**CarbonTwin OS** is an industrial AI and Digital Twin operating platform engineered for modern manufacturing plants and industrial facilities. It unifies high-frequency IoT telemetry streaming, physics-informed digital twin simulations, XGBoost-powered predictive failure estimation, and real-time carbon emission intelligence into a single operational command center.
+An extensible, evidence-first digital twin for the Logos × ZuGrama Field Station at Chak Gulabpura, Jaipur (500 acres).
 
----
+Dhun Twin OS incorporates an authoritative, typed **Asset Registry**, deterministic physical modeling across energy, water, compute, and carbon, and extensible telemetry adapters (physical sensors, gateways, manual entry, CSV imports, and simulation). Every engineering value carries an explicit provenance tier:
 
-## FixTrace
+| Tier | Meaning |
+| --- | --- |
+| Measured | Counted on site or in Dhun's own records |
+| Dhun report | Taken from the KPI and masterplan documents |
+| Assumption | A stated planning figure, not verified |
+| Simulated | Produced by the deterministic twin model |
 
-> *"Remember the failure. Remember the fix."*
+## Screens
 
-**FixTrace** is the persistent experiential maintenance memory subsystem embedded within CarbonTwin OS, powered by **Hindsight** (Vectorize). 
+## Workspaces
 
-While conventional industrial software relies on static relational work-order tables, FixTrace endows factory maintenance operations with continuous, cross-incident organizational learning. When a technician encounters an anomaly, FixTrace queries Hindsight to recall past troubleshooting trials, identifies previously failed interventions so teams avoid repeating costly mistakes, and highlights verified root causes and validated repair playbooks.
+1. **Campus Masterplan & Spatial Twin (`/`)** — Interactive MapLibre GL satellite and terrain map of the 500-acre Dhun concession in Chak Gulabpura, Rajasthan (WGS-84). Includes independent GIS layers for cadastral boundaries, the 6m Dhun Loop mobility spine, swales, retention water bodies, preserved thickets, and Phase One building typologies.
+2. **Digital Twin & Telemetry Inventory (`/twin`)** — Hardware and virtual asset topology across 8 standard Dhun asset blueprints. Real-time telemetry monitoring with 45-second Time-To-Live (TTL) stale data detection, hysteresis alarm evaluation, manual CSV streaming, and a dedicated test lab for synthetic device validation.
+3. **Whole-Life Carbon Ledger (`/ledger`)** — EN 15978 whole-life carbon balance sheet across Scopes 1, 2, and 3. Embodied carbon capital tracking, 9.2-year repayment horizon, maturing semi-arid forest flux accounting, and submetering safeguards to prevent double-counting.
+4. **Scenario Cockpit & Sensitivity Modeling (`/scenarios`)** — Parametric sensitivity sandbox. Real-time levers for solar capacity, BESS storage, grid ceilings, compute loads, and cooling typologies with live deltas for carbon repayment, water, and capital (₹ Cr).
+5. **Compute Commons & Infrastructure Planning (`/compute`)** — Interactive AI compute facility sizing engine. Models 3 canonical scenarios (Pilot: 5 kW, Phase 1: 20 kW, Expansion: 50 kW), PUE facility overhead, BESS storage buffers, 24-hr marginal grid carbon curves, and source-backed accelerator BOM configurations without synthetic benchmark claims.
+6. **Energy Intelligence & Utility Bill Evidence (`/energy`)** — Empirical calibration hub integrating historical JVVNL electricity invoices (February 2022). Comprehensive financial breakdown, arrears isolation, CT meter multiplier identification, and reconciliation against Dhun's bill-derived campus baseline (300 MWh/yr).
 
-### Operational State vs. Experiential Memory
-
-A critical architectural distinction in CarbonTwin OS is the strict separation between operational records and true experiential memory:
-
-| Dimension | Operational State (Local SQLite / Relational) | Experiential Memory (Hindsight Cloud Memory Layer) |
-| :--- | :--- | :--- |
-| **Storage & Subsystem** | Local operational database (`fixtrace.db`) | Hindsight Vectorize Cloud Bank (`fixtrace-final-demo-01`) |
-| **Data Scope** | Machine registry, active incident status, step-by-step attempt timestamps, telemetry snapshots | Semantic maintenance insights, multi-step failure reflections, failure causal relationships |
-| **Query Mechanism** | Exact relational queries (`WHERE machine_id = 'MTR-001' AND status = 'OPEN'`) | Semantic vector search, hybrid keyword matching, cross-encoder neural reranking |
-| **Cognitive Role** | Audit trail, state machine, and ledger of record | Long-term organizational memory, learning from failure, preventative guidance |
-| **Future Utility** | Tracking specific work orders and operational lifecycles | Instant cross-incident knowledge transfer across facilities and machine variants |
-
-### The Core Hindsight Closed-Loop Lifecycle
-
-```
-   [ CarbonTwin Telemetry Anomaly ]
-                 │
-                 ▼
-       [ FixTrace Incident Ingest ]
-                 │
-                 ▼
-        [ Hindsight Recall ] ────► Prior experience found?
-                 │                         │
-                 ├────────── No ───────────┴────────── Yes ──────────┐
-                 ▼                                                   ▼
-     Baseline Exploration Mode                          Surfaced Playbook & Warnings
-    (Log step-by-step attempts)                        - Failed Actions to Avoid
-                 │                                     - Verified Successful Fix
-                 │                                     - Root Cause & Maintenance Lesson
-                 ▼                                                   │
-     [ Incident Resolution ]                                         ▼
-   (Root Cause + Verified Fix)                             [ Accelerated Recovery ]
-                 │
-                 ▼
-        [ Hindsight Retain ] ────► Synthesizes multi-unit experience, world models,
-                 │                 and observations into Vectorize cloud bank
-                 ▼
-   [ Organizational Memory Updated ]
-```
-
-1. **CarbonTwin Anomaly**: Real-time sensor stream flags abnormal vibrations, temperatures, or pressure anomalies on asset `MTR-001`.
-2. **FixTrace Incident**: Incident record is ingested with machine operating conditions (RPM, Temperature, Vibration RMS, Power).
-3. **Hindsight Recall**: The incident query is dispatched to Hindsight. On first encounter, zero prior memories exist.
-4. **Troubleshooting Execution**: Technicians log sequential attempts (marking intermediate interventions as FAILED and final resolution as SUCCESSFUL).
-5. **Resolution**: Incident is formally resolved with confirmed Root Cause, Verified Fix, and Lesson Learned.
-6. **Hindsight Retain**: FixTrace synthesizes the full maintenance narrative and calls `hindsight.retain()`, generating persistent reflections across observation, world, and experience memory layers.
-7. **Future Recall**: When similar symptoms occur in the future, Hindsight instantly retrieves past lessons, warning technicians against dead-end attempts before tools touch the machine.
-
----
-
-## Architecture
-
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                               CarbonTwin OS UI                              │
-│         (React 19 / TypeScript / Vite / Tailwind CSS / Recharts)            │
-│      Factory Map  •  Digital Twin Panel  •  FixTrace Workbench  •  Copilot  │
-└──────────────────────┬───────────────────────────────┬──────────────────────┘
-                       │ :8000                         │ :8001
-                       ▼                               ▼
-       ┌───────────────────────────────┐   ┌──────────────────────────────┐
-       │      CarbonTwin Backend       │   │       FixTrace Backend       │
-       │    (FastAPI / Socket.IO)      │   │    (FastAPI / SQLite ORM)    │
-       │  • Telemetry Simulation Engine│   │  • Incident Lifecycle State  │
-       │  • XGBoost Predictive Models  │   │  • Attempt Action Ledger     │
-       │  • Real-time Anomaly Detector │   │  • Observability Telemetry   │
-       │  • Carbon Hotspot Analytics   │   └──────────────┬───────────────┘
-       └───────────────────────────────┘                  │
-                                                          │ Hindsight SDK / REST
-                                                          ▼
-                                           ┌──────────────────────────────┐
-                                           │       Hindsight Cloud        │
-                                           │    (Vectorize.io Engine)     │
-                                           │  • Experiential Memory Bank  │
-                                           │  • Semantic / Rerank Search  │
-                                           │  • Long-Term Knowledge Base  │
-                                           └──────────────────────────────┘
-```
-
----
-
-## Technology Stack
-
-### CarbonTwin Core
-- **Frontend**: React 19, TypeScript, Vite, Tailwind CSS, Recharts, Lucide Icons, Framer Motion
-- **Backend**: FastAPI, Python 3.10+, Uvicorn, Python-SocketIO
-- **Machine Learning**: XGBoost, Scikit-Learn, Pandas, NumPy
-- **Real-time Telemetry**: Socket.IO bi-directional streaming
-
-### FixTrace Experiential Subsystem
-- **UI**: Embedded FixTrace Workbench, Dynamic Guidance Cards, Real-time Observability Ledger
-- **Service API**: FastAPI (REST endpoints on port `8001`)
-- **Operational Database**: SQLite with SQLAlchemy ORM
-- **Experiential Memory Engine**: Hindsight (Vectorize Python SDK & Cloud API)
-
----
-
-## Hindsight Integration
-
-FixTrace integrates directly with **Hindsight** (`api.hindsight.vectorize.io`), treating organizational experience as a dynamic cognitive capability rather than a static text log:
-
-- **Not a Mere Database**: Instead of string-matching SQL rows, Hindsight decomposes troubleshooting narratives into semantic memory units (`observation`, `world`, `experience`), indexing contextual machine state alongside failure modes.
-- **Cognitive Decomposition**: Retained maintenance experiences yield structured insights—capturing why an approach failed and linking symptoms to laser alignment tolerances.
-- **Demonstrated Dual-Stage Behavior**:
-  - *Stage A (First Encounter)*: Asset `MTR-001` exhibits 120Hz vibration sidebands. Hindsight bank returns `0` memories (`prior_experience_found: false`). Technicians log two failed troubleshooting attempts (grease re-lubrication, belt de-tensioning) followed by a successful ceramic bearing installation and laser alignment. Upon resolution, Hindsight retains the full context.
-  - *Stage B (Second Encounter)*: A subsequent incident with similar operating conditions triggers Hindsight recall. Hindsight retrieves the previous experience (relevance score `0.9047`), immediately presenting the technician with:
-    1. **Approaches to Avoid**: Prior failed re-lubrication and belt tensioning attempts.
-    2. **Recommended Action**: Matched ceramic hybrid bearing (SKF 6208-2Z) and precision laser alignment.
-    3. **Root Cause & Lesson Learned**: 0.065mm angular coupling misalignment causing fatigue spalling.
-
----
-
-## Verified Demo Flow (Asset MTR-001)
-
-The canonical rehearsal validates the FixTrace cognitive loop against real Hindsight cloud memory:
-
-```
-[STAGE A] Incident INC-20260929-966D
-  • Initial Recall: 0 prior memories found
-  • Attempt 1 [FAILED]: Re-lubricated bearing housing with synthetic polyurea grease
-  • Attempt 2 [FAILED]: Adjusted drive belt tension from 520N to 420N
-  • Attempt 3 [SUCCESSFUL]: Installed ceramic hybrid bearing (SKF 6208-2Z) & laser aligned to 0.015mm
-  • Resolution: Root cause & operational lesson recorded
-  • Hindsight Retain: Retained to bank 'fixtrace-final-demo-01'
-
-[STAGE B] Incident INC-20260929-7AE4 (New Incident, Similar Symptoms)
-  • Subsequent Recall: 10 semantic memory units retrieved
-  • Best Match Score: 0.9047 (Raw Hindsight reranker score)
-  • UI Guidance: Surfaces 2 failed approaches to avoid, verified fix, root cause, and lesson
-```
-
----
-
-## Running Locally
-
-### Prerequisites
-- Node.js 18+ and npm
-- Python 3.10+
-- Hindsight API Key from [Vectorize.io](https://vectorize.io)
-
-### 1. Environment Setup
-
-Copy `.env.example` to `.env` in both backend folders:
-
-```bash
-# In fixtrace-backend/
-cp .env.example .env
-# Edit .env to set your HINDSIGHT_API_KEY and HINDSIGHT_BANK_ID
-
-# In backend/ (CarbonTwin core)
-cp .env.example .env
-# Edit .env to set your GEMINI_API_KEY
-```
-
-### 2. Start CarbonTwin Backend (Port 8000)
-
-```bash
-cd backend
-python -m venv .venv
-# Windows:
-.venv\Scripts\activate
-# Linux/macOS:
-# source .venv/bin/activate
-
-pip install -r requirements.txt
-python run.py
-```
-*CarbonTwin backend will start at `http://127.0.0.1:8000`.*
-
-### 3. Start FixTrace Backend (Port 8001)
-
-```bash
-cd fixtrace-backend
-python -m venv .venv
-# Windows:
-.venv\Scripts\activate
-# Linux/macOS:
-# source .venv/bin/activate
-
-pip install -r requirements.txt
-python -m uvicorn app.main:app --host 127.0.0.1 --port 8001 --reload
-```
-*FixTrace API will start at `http://127.0.0.1:8001`.*
-
-### 4. Start Unified Frontend (Port 5173)
+## Run it
 
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
-*The unified dashboard is accessible at `http://localhost:5173`.*  
-*Navigate to `/fixtrace` in the sidebar to open the FixTrace Workbench.*
 
----
-
-## Running Tests
-
-FixTrace includes an automated pytest suite covering CRUD operations, Hindsight API mock fallbacks, CarbonTwin anomaly ingestion, and observability endpoints:
+Production build:
 
 ```bash
-cd fixtrace-backend
-python -m pytest tests/ -v
+npm run build
+npm run preview
 ```
 
----
+Run automated verification tests (107 unit and integration tests):
 
-## Security
+```bash
+npm test
+```
 
-- All API keys, tokens, and personal credentials are strictly excluded from this repository via `.gitignore`.
-- Production instances must provide credentials through environment variables or secure vault injection.
-- Local SQLite database files (`*.db`) and Python virtual environments are excluded from version control.
+No API keys, no network services and no database are required. The model runs
+synchronously in the browser and is deterministic: the same inputs produce the
+same outputs.
 
----
+## What is modelled
 
-## Hackathon Submission
+- Three phases: Today (2026), Phase 1 (2029) and build-out (2035).
+- Operational energy from built area, EPI, compute, pumping, STP and waste.
+- Solar yield with seasonal shape, soiling and self-consumption.
+- Land sink: 3.75 tCO₂e per protected acre per year plus established farms.
+- Whole-life embodied carbon at 225 kgCO₂e/m² upfront and 287.5 kgCO₂e/m²
+  in the use stage, over a 25-year assessment window.
+- Water balance: domestic demand plus landscape irrigation against harvest.
 
-- **Hackathon**: HackWithHyderabad 3.0
-- **Theme**: *AI Agents That Learn Using Hindsight*
-- **Solution Alignment**: FixTrace directly embodies the theme by equipping industrial maintenance agents and operators with persistent, self-improving memory. By leveraging Hindsight's retain and recall APIs, CarbonTwin OS transforms ephemeral machine breakdowns into durable organizational wisdom.
+Key planning assumptions live in
+`frontend/src/features/dhun/data/constants.ts` and
+`frontend/src/features/dhun/data/phases.ts`.
+
+## Sensor gateway seam
+
+The demo needs no network. To attach a field gateway later, build the frontend
+with a websocket URL:
+
+```bash
+VITE_TELEMETRY_WS=wss://gateway.example/dhun npm run build
+```
+
+The gateway may send one packet, an array, or a `{ packets: [...] }` envelope:
+
+```json
+{"nodeId":"grid-hub","metric":"import","value":318.4,"at":1790000000000}
+```
+
+`at` is optional Unix milliseconds. A packet overrides the matching node and
+channel for 30 seconds; then the deterministic model takes over again. Malformed
+JSON and non-numeric values are dropped, and unknown keys never change a node.
+The frame clock pauses without closing the socket, and losing the socket
+degrades to the model rather than a blank screen.
+
+## Confidentiality
+
+This repository is shared project material for the Dhun team. Do not publish,
+share, or redistribute it without explicit permission.
